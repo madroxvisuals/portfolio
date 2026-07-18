@@ -1,0 +1,51 @@
+src/components/BrandSnapshots.tsx
+  h_1dd7bb9db9f819 3,14,22,27,34,38,42,44,51,58,65,70,72,77,87,89,95,115,121,148,153,172,181-259
+  s_1c40d256348805::t_595d0d9c0342ae 2,5-13,15-21,23-26,28-33,35-37,39-41,43,45-50,52-57,59-64,66-69,71,73-76,78-86,88,90-94,96-114,116-120,122-147,149-152,154-171,178-180,260
+  s_1c40d256348805::t_b1bd23af48026c 1
+src/components/CtaFooter.tsx
+  s_1c40d256348805::t_6ea64973e708ca 1,11-15,17,19,21-22,24,26-31,33-38,40-45,47-52,54,56-59,61-62,64-73,75-77,79-90,92-100,102-114,116-123,125-133,135-166,168-180,182
+  h_1dd7bb9db9f819 4,10,16,18,20,23,25,32,39,46,53,55,60,63,74,78,91,101,115,124,134,167,181
+src/components/About.tsx
+  s_1c40d256348805::t_ad187ba2950aaa 2,5-13,15-18,20-21,23-25,27-30,32,34-35,39-45,48-76,78-82,90-99,101-111,113-118,122-138,140-155,159-174,176-181,184-208,214
+  h_1dd7bb9db9f819 4,14,19,22,26,31,33,36-38,47,77,83-89,100,112,120-121,139,156-158,175,183,213
+  s_1c40d256348805::t_734dc0c9fdbbbb 1
+.gitignore
+  h_1dd7bb9db9f819 16,18
+src/app/page.tsx
+  h_1dd7bb9db9f819 3,8-11
+  s_ef273ce4209182::t_fd636f5134fc15 16
+  s_ef273ce4209182::t_405dcaaba71f04 28-29
+  s_ef273ce4209182::t_da84a8415bc285 15
+  s_ef273ce4209182::t_0f046593521f24 17-19,25-27
+src/components/Header.tsx
+  h_1dd7bb9db9f819 1-115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "1626560b3449dd275aff991d76ea570e653793c6",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_1c40d256348805": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1784400922741",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    },
+    "s_ef273ce4209182": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1784384140903",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
