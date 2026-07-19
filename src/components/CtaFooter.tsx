@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useCallback, useRef } from "react";
 import { motion } from "framer-motion";
 import { MadroxLogo } from "./MadroxLogo";
