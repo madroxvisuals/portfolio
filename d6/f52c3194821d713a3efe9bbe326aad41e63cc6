@@ -1,0 +1,52 @@
+src/components/Testimonials.tsx
+  s_5f267117a901c8::t_34fb50182c0618 1
+  s_5f267117a901c8::t_aee3a7b204e299 2
+src/components/CtaFooter.tsx
+  s_5f267117a901c8::t_7b3cdf2cdbb103 1
+  s_5f267117a901c8::t_1dbfcdd9e22ddb 2
+src/components/WhyChooseUs.tsx
+  s_5f267117a901c8::t_9ddfd2bd6ec3a4 1
+  s_5f267117a901c8::t_6ef409d0c478e8 2
+src/components/Services.tsx
+  s_5f267117a901c8::t_cf840e0cbe6f20 1
+  s_5f267117a901c8::t_d8bf4095496444 2
+src/components/Hero.tsx
+  s_5f267117a901c8::t_37167f7ef3ba43 1
+  s_5f267117a901c8::t_05186ba523c72d 2
+src/components/About.tsx
+  s_5f267117a901c8::t_fbfbd3c0e6c311 1
+  s_5f267117a901c8::t_514fd0de525313 2
+src/components/HowWeWork.tsx
+  s_5f267117a901c8::t_e5751a78f21863 1
+  s_5f267117a901c8::t_435f9c31be3fbe 2
+src/components/BrandSnapshots.tsx
+  s_5f267117a901c8::t_80dee4fea4b700 1
+  s_5f267117a901c8::t_8818ebdddc13f0 2
+src/components/FeaturedProjects.tsx
+  s_5f267117a901c8::t_4c070474f304ae 1
+  s_5f267117a901c8::t_cd155047606f0f 2
+src/components/Header.tsx
+  s_5f267117a901c8::t_612e81c6371a9b 1
+  s_5f267117a901c8::t_617a6f2a3b3786 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "d6f52c3194821d713a3efe9bbe326aad41e63cc6",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_5f267117a901c8": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1784439878125",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
