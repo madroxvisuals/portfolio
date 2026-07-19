@@ -1,0 +1,25 @@
+src/app/globals.css
+  h_1dd7bb9db9f819 123,128,134,153,176,181,193,197,203,213,217,221,226,236,252,262,276
+  s_5f267117a901c8::t_c7b498b3eb9053 3-9,11-27,29-58,61-62,65,67-122,124-127,129-133,135-152,154-175,177-180,182-185,187-192,194-196,198-202,204-212,214-216,218-220,222-225,227-235,237-251,253-261,263-275,277-280
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "b6953ee54f16dd195c69e82a714387f0e1763b01",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_5f267117a901c8": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1784439878125",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
