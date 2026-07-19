@@ -1,26 +1,280 @@
 @import "tailwindcss";
 
+/* ============================================================
+   MADROX VISUALS — GLOBAL TOKENS & TYPOGRAPHY
+   60% Black · 30% White · 10% Gold (strict)
+   Helvetica Bold (headings) · Helvetica Medium (body)
+   Arial Unicode MS (micro) · Times Now Italic (accent only)
+   ============================================================ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    /* 60% — Black */
+    --madrox-black: #0a0a0a;
+    --madrox-black-soft: #141414;
+    --madrox-black-elev: #1a1a1a;
+
+    /* 30% — White */
+    --madrox-white: #ffffff;
+    --madrox-white-muted: rgba(255, 255, 255, 0.72);
+    --madrox-white-dim: rgba(255, 255, 255, 0.42);
+    --madrox-white-line: rgba(255, 255, 255, 0.10);
+    --madrox-white-glass: rgba(255, 255, 255, 0.05);
+
+    /* 10% — Gold */
+    --madrox-gold: #e8b923;
+    --madrox-gold-deep: #c9971e;
+    --madrox-gold-soft: #f2c94a;
+    --madrox-gold-glow: rgba(232, 185, 35, 0.35);
+
+    /* Type stacks — spec-exact */
+    --font-bold: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-medium: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-small: "Arial Unicode MS", "Noto Sans", Arial, sans-serif;
+    --font-italic: "Times Now Italic", "Cormorant Garamond", "Times New Roman", Georgia, serif;
+
+    /* Motion */
+    --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Shadcn defaults — kept dark by default */
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 45 82% 53%;
+    --primary-foreground: 0 0% 5%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 45 82% 53%;
+    --radius: 1rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--madrox-black);
+    color: var(--madrox-white);
+    font-family: var(--font-medium);
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* Textured smoky-black backdrop with soft light streaks */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background: radial-gradient(
+            1200px 800px at 20% 10%,
+            rgba(255, 255, 255, 0.04),
+            transparent 60%
+    ),
+    radial-gradient(
+            900px 700px at 85% 30%,
+            rgba(232, 185, 35, 0.05),
+            transparent 65%
+    ),
+    radial-gradient(
+            1000px 900px at 50% 100%,
+            rgba(255, 255, 255, 0.03),
+            transparent 70%
+    ),
+    linear-gradient(180deg, #0a0a0a 0%, #111111 50%, #0a0a0a 100%);
+    pointer-events: none;
+}
+
+/* subtle grain layer at ~4% opacity */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.6 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    background-size: 240px 240px;
+}
+
+/* Type helpers */
+.font-bold-h {
+    font-family: var(--font-bold);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.font-med {
+    font-family: var(--font-medium);
+    font-weight: 500;
+}
+
+.font-sm {
+    font-family: var(--font-small);
+    font-weight: 400;
+    letter-spacing: 0.14em;
+}
+
+.font-ital {
+    font-family: var(--font-italic);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+/* Glass card — used site-wide */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transition: all 0.4s var(--ease-brand);
+}
+
+.glass:hover {
+    transform: translateY(-6px) scale(1.015);
+    border-color: rgba(232, 185, 35, 0.45);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55),
+    0 0 24px rgba(232, 185, 35, 0.18);
+}
+
+/* Thin gold hairline */
+.hairline-gold {
+    background: linear-gradient(
+            90deg,
+            transparent,
+            var(--madrox-gold),
+            transparent
+    );
+}
+
+/* Selection & focus */
+::selection {
+    background: var(--madrox-gold);
+    color: var(--madrox-black);
+}
+
+a,
+button {
+    outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 1px solid var(--madrox-gold);
+    outline-offset: 3px;
+}
+
+/* Scrollbar (dark) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+    border-radius: 8px;
+    border: 2px solid #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--madrox-gold-deep);
+}
+
+/* Lenis smooth scroll */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+
+/* Marquee */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-track {
+    animation: marquee 42s linear infinite;
+    will-change: transform;
+}
+
+/* Floating logo idle */
+@keyframes floatY {
+    0%,
+    100% {
+        transform: translateY(-4px);
+    }
+    50% {
+        transform: translateY(4px);
+    }
+}
+
+@keyframes goldPulse {
+    0%,
+    100% {
+        filter: drop-shadow(0 0 20px rgba(232, 185, 35, 0.35));
+    }
+    50% {
+        filter: drop-shadow(0 0 42px rgba(232, 185, 35, 0.7));
+    }
+}
+
+.logo-float {
+    animation: floatY 4s ease-in-out infinite,
+    goldPulse 3s ease-in-out infinite;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .logo-float {
+        animation: none !important;
+    }
 }
