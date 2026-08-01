@@ -306,10 +306,11 @@ export const CtaFooter: React.FC = React.memo(() => {
                             required
                             id="message"
                             name="message"
-                            rows={4}
+                            rows={6}
                             defaultValue={state.message}
                             data-testid="contact-input-message"
-                            style={{ ...inputStyle, resize: "vertical" }}
+                            className="resize-none"
+                            style={{ ...inputStyle }}
                             placeholder="Tell us about your brand or project…"
                         />
                     </Field>
