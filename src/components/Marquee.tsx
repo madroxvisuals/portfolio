@@ -8,7 +8,7 @@ export const Marquee = ({ testId = "editorial-marquee" }) => {
   const items = [
     "Madrox Visuals",
     "Designed to Be Remembered",
-    "Est. 2023",
+    "Est. 2024",
     "Delhi NCR",
     "Premium Creative Studio",
     "Purposeful Design",
