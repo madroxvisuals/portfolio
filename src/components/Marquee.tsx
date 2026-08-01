@@ -26,7 +26,7 @@ export const Marquee = ({ testId = "editorial-marquee" }) => {
         {row.map((label, i) => (
           <div key={i} className="flex items-center shrink-0 pr-14">
             <span
-              className="font-bold-h uppercase text-white/85 text-[42px] sm:text-[64px] leading-none"
+              className="marquee-font uppercase text-white/85 text-[42px] sm:text-[64px] leading-none"
               style={{ letterSpacing: "-0.01em" }}
             >
               {label}

@@ -84,7 +84,7 @@ export const WhyChooseUs = () => {
           {/* thin gold-topped vertical dividers between columns (desktop) */}
           <div
             aria-hidden
-            className="hidden lg:block absolute top-0 bottom-0 left-1/3 w-[1px] bg-white/8"
+            className="hidden lg:block absolute top-0 bottom-0 left-[33%] w-[1px] bg-white/8"
           >
             <span
               className="absolute -top-1 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full"
@@ -93,7 +93,7 @@ export const WhyChooseUs = () => {
           </div>
           <div
             aria-hidden
-            className="hidden lg:block absolute top-0 bottom-0 left-2/3 w-[1px] bg-white/8"
+            className="hidden lg:block absolute top-0 bottom-0 left-[67%] w-[1px] bg-white/8"
           >
             <span
               className="absolute -top-1 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full"

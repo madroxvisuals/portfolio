@@ -177,7 +177,7 @@ export const CtaFooter: React.FC = React.memo(() => {
                     className="flex items-center justify-center gap-6 sm:gap-16 flex-wrap font-sm text-[10px] uppercase text-white/50 tracking-[0.42em]"
                     data-testid="cta-micronav"
                 >
-                    <span>Established 2023</span>
+                    <span>Established 2024</span>
                     <span aria-hidden className="w-1.5 h-1.5 rounded-full" style={GOLD_DOT_STYLE}/>
                     <span>Premium Creative Brand</span>
                     <span aria-hidden className="w-1.5 h-1.5 rounded-full" style={GOLD_DOT_STYLE}/>

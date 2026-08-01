@@ -79,7 +79,7 @@ export const Hero: React.FC = () => {
                 className="font-sm text-[11px] uppercase text-white/60 mb-14 tracking-[0.42em]"
                 data-testid="hero-established"
             >
-                Established 2023
+                Established 2024
             </motion.div>
 
             {/* Logo mark with float + pulse + parallax */}

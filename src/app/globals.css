@@ -124,6 +124,12 @@ body::after {
     letter-spacing: -0.02em;
 }
 
+.marquee-font {
+    font-family: serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
 .font-med {
     font-family: var(--font-medium);
     font-weight: 500;

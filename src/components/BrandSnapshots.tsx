@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { motion, useInView, type Variants } from "framer-motion";
 
 const NODES = [
-    "Established: 2023",
+    "Established: 2024",
     "30+ Happy Clients",
     "100+ Creative Projects",
     "Based in Delhi NCR",
