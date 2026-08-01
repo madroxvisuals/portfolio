@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useCallback, useRef, useActionState } from "react";
-import { toast } from "sonner";
+import { toast, Toaster } from "sonner";
 import { tryCatch } from "@/utils";
 import { TOAST_MSG } from "@/constants";
 import { MadroxLogo } from "./MadroxLogo";
@@ -166,6 +166,7 @@ export const CtaFooter: React.FC = React.memo(() => {
             data-testid="cta-footer-section"
             className="relative py-32 sm:py-44 px-6 overflow-hidden"
         >
+            <Toaster theme="dark" position="top-right" richColors/>
             {/* soft gold aura behind headline */}
             <div aria-hidden className="absolute inset-0 pointer-events-none" style={AURA_STYLE}/>
 
