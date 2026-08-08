@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
+import { IMG_PATHS } from "@/constants";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MadroxLogo } from "./MadroxLogo";
 
 const LINKS = [
   { label: "About", href: "#about" },
@@ -50,7 +51,7 @@ export const Header = () => {
             data-testid="navbar-logo-link"
             className="flex items-center gap-3"
           >
-            <MadroxLogo size={38} wordmark={false} testId="navbar-logo" />
+              <Image src={IMG_PATHS.logo_without_text} alt="Madrox Logo" width={50} height={50} />
             <span
               className="font-bold-h text-white text-[11px] sm:text-xs"
               style={{ letterSpacing: "0.4em" }}

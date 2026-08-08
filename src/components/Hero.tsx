@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
+import { IMG_PATHS } from "@/constants";
 import React, { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform, type Variants } from "framer-motion";
-import { MadroxLogo } from "./MadroxLogo";
 
 /**
  * Kinetic hero with masked line-by-line reveal, floating logo,
@@ -91,7 +92,7 @@ export const Hero: React.FC = () => {
                 className="relative"
             >
                 <div className="logo-float">
-                    <MadroxLogo size={280} wordmark={false} testId="hero-logo-mark" />
+                    <Image src={IMG_PATHS.logo_without_text} alt="Madrox Logo" width={250} height={250} />
                 </div>
             </motion.div>
 

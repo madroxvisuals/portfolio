@@ -10,3 +10,8 @@ export const TOAST_MSG = {
         }
     }
 } as const;
+
+export const IMG_PATHS = {
+    logo_without_text: "/logo_without_text.png",
+    logo_with_text: "/logo_with_text.png"
+} as const;

@@ -2,7 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { MadroxLogo } from "./MadroxLogo";
+import { IMG_PATHS } from "@/constants";
+import Image from "next/image";
 
 const SERVICES = [
   { label: "Graphic Designing", stem: 190 },
@@ -21,7 +22,7 @@ export const Services = () => {
       <div className="max-w-[1400px] mx-auto">
         {/* Corner logo (per spec) */}
         <div className="absolute top-10 right-8 hidden md:block opacity-90">
-          <MadroxLogo size={70} wordmark={false} testId="services-corner-logo" />
+            <Image src={IMG_PATHS.logo_without_text} alt="Madrox Logo" width={80} height={80} />
         </div>
 
         <div className="max-w-3xl">

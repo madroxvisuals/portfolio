@@ -3,7 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Star, StarHalf } from "lucide-react";
-import { MadroxLogo } from "./MadroxLogo";
+import { IMG_PATHS } from "@/constants";
+import Image from "next/image";
 
 interface Review {
     name: string;
@@ -118,7 +119,7 @@ export const Testimonials: React.FC = () => {
         >
             <div className="max-w-[1400px] mx-auto relative">
                 <div className="absolute top-0 right-4 hidden md:block opacity-90">
-                    <MadroxLogo size={70} wordmark={false} testId="testimonials-corner-logo" />
+                    <Image src={IMG_PATHS.logo_without_text} alt="Madrox Logo" width={80} height={80} />
                 </div>
 
                 <div className="max-w-3xl">

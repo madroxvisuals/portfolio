@@ -3,8 +3,8 @@
 import React, { useCallback, useRef, useActionState } from "react";
 import { toast, Toaster } from "sonner";
 import { tryCatch } from "@/utils";
-import { TOAST_MSG } from "@/constants";
-import { MadroxLogo } from "./MadroxLogo";
+import { IMG_PATHS, TOAST_MSG } from "@/constants";
+import Image from "next/image";
 import axios, { AxiosResponse } from "axios";
 import { motion, type Variants } from "framer-motion";
 import { ContactFormState, CONTACT_FORM_FIELDS } from "@/types";
@@ -362,7 +362,7 @@ export const CtaFooter: React.FC = React.memo(() => {
                 {/* Footer divider + logo */}
                 <div className="mt-24 flex flex-col items-center gap-6">
                     <div className="h-px w-40 hairline-gold opacity-60"/>
-                    <MadroxLogo size={90} wordmark={false} testId="footer-logo"/>
+                    <Image src={IMG_PATHS.logo_without_text} alt="Madrox Logo" width={80} height={80} />
                     <div className="font-sm text-[10px] uppercase text-white/40 tracking-[0.4em]">
                         © 2026 Designed by MADROX VISUALS
                     </div>

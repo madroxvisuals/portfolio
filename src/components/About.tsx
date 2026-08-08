@@ -2,7 +2,8 @@
 
 import React from "react";
 import { motion, type Variants } from "framer-motion";
-import { MadroxLogo } from "./MadroxLogo";
+import { IMG_PATHS } from "@/constants";
+import Image from "next/image";
 
 // ── Hoisted animation variants (created once at module load, not per render) ──
 const fadeUp: Variants = {
@@ -138,7 +139,7 @@ export const About: React.FC = React.memo(() => {
                         copyTestId="about-copy"
                     />
                     <motion.div variants={fadeUp} className="mt-10 flex items-center gap-4">
-                        <MadroxLogo size={64} wordmark={false} testId="about-logo"/>
+                        <Image src={IMG_PATHS.logo_without_text} alt="Madrox Logo" width={80} height={80} />
                         <div className="flex flex-col">
                             <span
                                 className="font-bold-h text-white text-sm"
