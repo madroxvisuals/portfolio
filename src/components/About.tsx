@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { motion, type Variants } from "framer-motion";
-import { IMG_PATHS } from "@/constants";
 import Image from "next/image";
+import { IMG_PATHS } from "@/constants";
+import { motion, type Variants } from "framer-motion";
 
 // ── Hoisted animation variants (created once at module load, not per render) ──
 const fadeUp: Variants = {

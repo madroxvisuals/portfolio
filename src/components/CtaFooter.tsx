@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useCallback, useRef, useActionState } from "react";
-import { toast, Toaster } from "sonner";
-import { tryCatch } from "@/utils";
-import { IMG_PATHS, TOAST_MSG } from "@/constants";
 import Image from "next/image";
+import { tryCatch } from "@/utils";
+import { toast, Toaster } from "sonner";
 import axios, { AxiosResponse } from "axios";
+import { IMG_PATHS, TOAST_MSG } from "@/constants";
 import { motion, type Variants } from "framer-motion";
-import { ContactFormState, CONTACT_FORM_FIELDS } from "@/types";
+import { CONTACT_FORM_FIELDS, ContactFormState } from "@/types/app.types";
 
 /**
  * Final CTA / Contact footer with magnetic hover on CTA links,

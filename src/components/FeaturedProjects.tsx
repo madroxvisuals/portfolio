@@ -2,6 +2,12 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { GALLERIES } from "@/constants";
+import {
+    ASPECT_CLASSES,
+    CardAspect,
+    CardSize, Post,
+} from "@/types/featuredProjects.types";
 
 /**
  * Featured Projects — three curated sub-galleries.
@@ -10,157 +16,8 @@ import { motion } from "framer-motion";
  * described colour mood, framed with glass + spotlight treatment.
  */
 
-interface SpotlightData {
-    grad: string;
-    accent: string;
-    fg: string;
-    label: string;
-    sub: string;
-    devanagari: string;
-}
-
-type SpotlightKey =
-    | "matcha"
-    | "nike"
-    | "bellavita"
-    | "cartier"
-    | "chai"
-    | "meme"
-    | "smonic"
-    | "kala"
-    | "memorial"
-    | "madroxVid"
-    | "jordan"
-    | "raj"
-    | "ve"
-    | "mind";
-
-const spotlight: Record<SpotlightKey, SpotlightData> = {
-    matcha: {
-        grad: "radial-gradient(120% 100% at 30% 20%, #6bbf6e 0%, #2c5b3a 45%, #0f2418 100%)",
-        accent: "#c9f3b5",
-        fg: "#f4ffe8",
-        label: "Matcha Latte",
-        sub: "Drink · Product Poster",
-        devanagari: "",
-    },
-    nike: {
-        grad: "radial-gradient(120% 100% at 70% 30%, #3aa9ff 0%, #0e3a75 45%, #05122b 100%)",
-        accent: "#dceeff",
-        fg: "#ffffff",
-        label: "High Sky Blue",
-        sub: "Sneaker · Ad Campaign",
-        devanagari: "",
-    },
-    bellavita: {
-        grad: "radial-gradient(120% 100% at 40% 40%, #d94ea6 0%, #6b1a53 45%, #24081c 100%)",
-        accent: "#ffd0ea",
-        fg: "#fff2fa",
-        label: "Date Woman",
-        sub: "Bellavita · Perfume",
-        devanagari: "",
-    },
-    cartier: {
-        grad: "radial-gradient(120% 100% at 50% 60%, #262421 0%, #16130e 60%, #060402 100%)",
-        accent: "#e8b923",
-        fg: "#ede4c8",
-        label: "Drive de Cartier",
-        sub: "Moonphase · Luxury Watch",
-        devanagari: "",
-    },
-    chai: {
-        grad: "radial-gradient(120% 100% at 30% 70%, #d2a02b 0%, #7a5410 55%, #241800 100%)",
-        accent: "#0a0a0a",
-        fg: "#fff6d6",
-        label: "पहले चाय",
-        sub: "Typographic · Tea Stall",
-        devanagari: "पहले चाय",
-    },
-    meme: {
-        grad: "radial-gradient(120% 100% at 60% 30%, #ff4b4b 0%, #7a0f14 55%, #240404 100%)",
-        accent: "#ffe0e0",
-        fg: "#fff",
-        label: "Video Editor Chahiye",
-        sub: "Promo · Social Post",
-        devanagari: "एडिटर चाहिए",
-    },
-    smonic: {
-        grad: "linear-gradient(135deg, #6b3fff 0%, #ff8b3d 100%)",
-        accent: "#fff",
-        fg: "#fff",
-        label: "Smonic",
-        sub: "Brand · Discount Pair",
-        devanagari: "",
-    },
-    kala: {
-        grad: "radial-gradient(120% 100% at 50% 40%, #2b6bd9 0%, #10306b 55%, #050e24 100%)",
-        accent: "#e8b923",
-        fg: "#e6efff",
-        label: "कला का संसार",
-        sub: "Cultural · Poster",
-        devanagari: "कला का संसार",
-    },
-    memorial: {
-        grad: "radial-gradient(120% 100% at 40% 50%, #2fb5b0 0%, #0e5a58 55%, #04211f 100%)",
-        accent: "#d3f5f2",
-        fg: "#f0fbfa",
-        label: "Every Step Shouldn't Hurt",
-        sub: "Memorial · Ortho Ad",
-        devanagari: "",
-    },
-    madroxVid: {
-        grad: "linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%)",
-        accent: "#e8b923",
-        fg: "#fff",
-        label: "MADROX",
-        sub: "Retro · Cinematic B&W",
-        devanagari: "",
-    },
-    jordan: {
-        grad: "linear-gradient(180deg, #262626 0%, #0a0a0a 100%)",
-        accent: "#e8b923",
-        fg: "#fff",
-        label: "JORDAN",
-        sub: "Sneaker · Bold Type",
-        devanagari: "",
-    },
-    raj: {
-        grad: "linear-gradient(180deg, #4a3a10 0%, #120b00 100%)",
-        accent: "#e8b923",
-        fg: "#f6e8b0",
-        label: "RAJASTHANI",
-        sub: "Hawa Mahal · Duotone",
-        devanagari: "",
-    },
-    ve: {
-        grad: "linear-gradient(180deg, #1f1f1f 0%, #060606 100%)",
-        accent: "#e8b923",
-        fg: "#fff",
-        label: "VIDEO EDITOR",
-        sub: "Portrait · Black & White",
-        devanagari: "",
-    },
-    mind: {
-        grad: "linear-gradient(180deg, #2a2a2a 0%, #0a0a0a 100%)",
-        accent: "#e8b923",
-        fg: "#fff",
-        label: "WHAT'S IN MY MIND",
-        sub: "Brain · Concept",
-        devanagari: "",
-    },
-};
-
-type CardAspect = "portrait" | "square" | "default";
-type CardSize = "md" | "lg";
-
-const ASPECT_CLASSES: Record<CardAspect, string> = {
-    portrait: "aspect-[3/4]",
-    square: "aspect-square",
-    default: "aspect-[4/5]",
-};
-
 interface ProjectCardProps {
-    data: SpotlightData;
+    data: Post;
     aspect?: CardAspect;
     size?: CardSize;
     showWatermark?: boolean;
@@ -187,7 +44,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         >
             <div
                 className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.06]"
-                style={{ background: data.grad }}
+                style={{ 
+                    backgroundImage: `url(${data.img})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
             />
             {/* Spotlight ring */}
             <div
@@ -211,34 +72,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     MADROX
                 </div>
             )}
-
-            {/* Typographic content */}
-            <div
-                className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-                {data.devanagari ? (
-                    <div
-                        className="font-bold-h leading-none"
-                        style={{
-                            color: data.fg,
-                            fontSize: size === "lg" ? "56px" : "42px",
-                            letterSpacing: "-0.02em",
-                        }}
-                    >
-                        {data.devanagari}
-                    </div>
-                ) : (
-                    <div
-                        className="font-bold-h leading-none uppercase"
-                        style={{
-                            color: data.fg,
-                            fontSize: size === "lg" ? "42px" : "30px",
-                            letterSpacing: "-0.01em",
-                        }}
-                    >
-                        {data.label}
-                    </div>
-                )}
-            </div>
 
             {/* Caption slide-up */}
             <figcaption
@@ -300,50 +133,8 @@ const CaptionRow: React.FC<CaptionRowProps> = ({ left, center, right, testId }) 
 );
 
 /** Data-driven gallery definitions — avoids repeating near-identical JSX per card. */
-interface GallerySection {
-    id: string;
-    chapter: string;
-    title: string;
-    subtitle: string;
-    keys: SpotlightKey[];
-    showWatermark?: boolean;
-    captionLeft: string;
-    captionRight: string;
-}
 
-const GALLERIES: GallerySection[] = [
-    {
-        id: "graphic",
-        chapter: "06 · Featured Projects 1",
-        title: "Graphic Designs",
-        subtitle:
-            "A selection of poster and product design work — colour-forward, mood-driven, print-ready.",
-        keys: ["matcha", "nike", "bellavita", "cartier", "chai"],
-        captionLeft: "Selected Works",
-        captionRight: "Graphic Designs",
-    },
-    {
-        id: "social",
-        chapter: "07 · Featured Projects 2",
-        title: "Social Media Posts",
-        subtitle:
-            "Feed-scroll stoppers — cultural, editorial, and performance-driven creative for brands.",
-        keys: ["meme", "smonic", "kala", "memorial"],
-        captionLeft: "Selected Works",
-        captionRight: "Social Media Posts",
-    },
-    {
-        id: "video",
-        chapter: "08 · Featured Projects 3",
-        title: "Video Editing / Motion Graphics",
-        subtitle:
-            "Cinematic edits and title-treatment reels — duotone stills stand in for the moving frame.",
-        keys: ["madroxVid", "jordan", "raj", "ve", "mind"],
-        showWatermark: true,
-        captionLeft: "Video Editing",
-        captionRight: "Motion Graphics",
-    },
-];
+
 
 const GRID_COLS_BY_COUNT: Record<number, string> = {
     4: "grid-cols-1 md:grid-cols-2 lg:grid-cols-4",
@@ -368,16 +159,18 @@ export const FeaturedProjects: React.FC = () => {
                             testId={`gallery-${gallery.id}-title`}
                         />
                         <div
-                            className={`grid ${GRID_COLS_BY_COUNT[gallery.keys.length] ?? GRID_COLS_BY_COUNT[5]} gap-4 sm:gap-5`}
+                            className={`grid ${GRID_COLS_BY_COUNT[gallery.posts.length] ?? GRID_COLS_BY_COUNT[5]} gap-4 sm:gap-5`}
                         >
-                            {gallery.keys.map((key) => (
-                                <ProjectCard
-                                    key={key}
-                                    data={spotlight[key]}
-                                    showWatermark={gallery.showWatermark}
-                                    testId={`proj-${key.toLowerCase()}`}
-                                />
-                            ))}
+                            {Array.from({ length: gallery.posts.length }).map((_, index) => {
+                                const galleryData = gallery.posts[index]
+                                return (
+                                    <ProjectCard
+                                        key={index}
+                                        data={galleryData}
+                                        showWatermark={gallery.showWatermark}
+                                        testId={`proj-${index}`}
+                                    />)
+                            })}
                         </div>
                         <CaptionRow
                             left={gallery.captionLeft}
