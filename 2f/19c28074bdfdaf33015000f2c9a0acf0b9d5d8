@@ -1,0 +1,111 @@
+src/components/About.tsx
+  h_1dd7bb9db9f819 6
+  h_1dd7bb9db9f819 5
+src/components/FeaturedProjects.tsx
+  s_16909bc0af6268::t_37f5542ebdbb07 6-8,10,47,51,166-167,170,172-173
+  h_1dd7bb9db9f819 5,169
+  s_e286b06a8159f0::t_dacea33d23ec3e 162
+  s_e286b06a8159f0::t_218704188d7750 20
+  s_e286b06a8159f0::t_eb87d0c6a6e518 164-165
+  s_e286b06a8159f0::t_d6db2fbf9d88f2 168
+  s_e286b06a8159f0::t_46b87b32b52657 171
+  s_16909bc0af6268::t_7570dc4140de6b 49-50
+  s_52452468c8ac08::t_85195caf71e4ac 48
+  s_16909bc0af6268::t_8978f1cbb1ec38 9
+  h_1dd7bb9db9f819 137
+src/constants.ts
+  s_52452468c8ac08::t_e1f7372fde193f 69,153
+  s_e286b06a8159f0::t_651e6ef53a27e6 111
+  s_e286b06a8159f0::t_4a94674e1ea747 170
+  s_e286b06a8159f0::t_55cd82ed47856b 175
+  s_e286b06a8159f0::t_91f8edbf25b15c 87
+  s_16909bc0af6268::t_1dbbf5359f44cd 18,33
+  s_e286b06a8159f0::t_c602511a445061 31
+  s_52452468c8ac08::t_cd38b52537268d 53,137
+  s_52452468c8ac08::t_1be3d171ae4283 76,118,160
+  s_e286b06a8159f0::t_011e4c3375fe2d 29
+  s_e286b06a8159f0::t_e4d19ac0c967e4 119
+  s_e286b06a8159f0::t_6a750314063994 190
+  s_52452468c8ac08::t_0a508461a9c948 45,129
+  s_e286b06a8159f0::t_bf77a08cd95e70 27
+  s_e286b06a8159f0::t_e47b07a1f616bb 30
+  s_e286b06a8159f0::t_c25e2242ca2a70 35
+  s_52452468c8ac08::t_191f4e94466130 36,38-44,46-52,54-60,62-68,70-75,80-85,88-93,96-101,104-109,112-117,122-127,130-135,138-143,146-151,154-159,173,183,194
+  s_e286b06a8159f0::t_5a6577de9733eb 77
+  h_1dd7bb9db9f819 2,19,26,34,161-162,196-310
+  s_e286b06a8159f0::t_358e9522e4ca4e 103
+  s_e286b06a8159f0::t_1ce8b5bdd5b86f 182
+  s_52452468c8ac08::t_f1c80d37c23c1d 61,145
+  s_e286b06a8159f0::t_9eda648c572447 95
+  s_52452468c8ac08::t_724f3029341cd8 37,121
+  s_e286b06a8159f0::t_e7881ea885fdf5 180
+  s_e286b06a8159f0::t_7a9b0f10abd981 32
+  s_e286b06a8159f0::t_7fa30b6fde6a16 1
+  s_e286b06a8159f0::t_f67d36ee921ebf 177
+  s_e286b06a8159f0::t_46f0501947add6 20
+  s_52452468c8ac08::t_9b610b38f4f13d 78,86,94,102,110,120,128,136,144,152,164-169,174,178,184,188
+  s_e286b06a8159f0::t_612a45591335f8 28
+  s_52452468c8ac08::t_404a7a96554835 79
+  s_e286b06a8159f0::t_6783e149a03fc9 176
+  s_e286b06a8159f0::t_0fb716185b11ca 181
+  s_52452468c8ac08::t_ba1d0bafbafb1d 185-187
+  h_1dd7bb9db9f819 21-25,163,171-172,179,189,191-193,195
+src/components/CtaFooter.tsx
+  h_1dd7bb9db9f819 5-6,8,10
+src/types/featuredProjects.types.ts
+  s_fc1e1c573bbd76::t_9a18c2e8ec6398 3-8,26-29
+  s_52452468c8ac08::t_13f7a318c074e1 22
+  h_1dd7bb9db9f819 23
+  s_52452468c8ac08::t_1dd6178625ab87 25
+  s_e286b06a8159f0::t_f0d4ad13f7ecf4 1
+  s_52452468c8ac08::t_efbc89121cf4e0 11-14,16-19
+  s_52452468c8ac08::t_28f02188001b6c 2
+  s_e286b06a8159f0::t_27865c639fbb4b 15
+  s_52452468c8ac08::t_b9e66d8869f380 20-21
+  h_1dd7bb9db9f819 9-10,24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "2f19c28074bdfdaf33015000f2c9a0acf0b9d5d8",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_16909bc0af6268": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "50c20e11-bb2c-411e-93b9-7c30e2bb399e",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    },
+    "s_52452468c8ac08": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786183252372",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    },
+    "s_e286b06a8159f0": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786195972082",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    },
+    "s_fc1e1c573bbd76": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786180656298",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
