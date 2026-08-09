@@ -3,29 +3,9 @@
 import Image from "next/image";
 import { IMG_PATHS } from "@/constants";
 import React, { useEffect, useRef } from "react";
-import { motion, useScroll, useTransform, type Variants } from "framer-motion";
+import { motion, useScroll, useTransform } from "motion/react";
 
-/**
- * Kinetic hero with masked line-by-line reveal, floating logo,
- * gold pulse, and subtle parallax on scroll.
- */
-
-// Static variant objects hoisted out of the component — they don't depend on
-// props/state, so recreating them on every render was wasted work.
-const containerVariants: Variants = {
-    hidden: {},
-    show: { transition: { staggerChildren: 0.11, delayChildren: 0.3 } },
-};
-
-const lineVariants: Variants = {
-    hidden: { y: "110%" },
-    show: {
-        y: "0%",
-        transition: { duration: 1.0, ease: [0.22, 1, 0.36, 1] },
-    },
-};
-
-export const Hero: React.FC = () => {
+export default function Hero() {
     const ref = useRef<HTMLElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -99,14 +79,23 @@ export const Hero: React.FC = () => {
             {/* Wordmark — masked line-by-line reveal */}
             <motion.div
                 style={{ y: yWord }}
-                variants={containerVariants}
+                variants={{
+                    hidden: {},
+                    show: { transition: { staggerChildren: 0.11, delayChildren: 0.3 } },
+                }}
                 initial="hidden"
                 animate="show"
                 className="mt-10 text-center"
             >
                 <div className="overflow-hidden">
                     <motion.h1
-                        variants={lineVariants}
+                        variants={{
+                            hidden: { y: "110%" },
+                            show: {
+                                y: "0%",
+                                transition: { duration: 1.0, ease: [0.22, 1, 0.36, 1] },
+                            },
+                        }}
                         data-testid="hero-wordmark"
                         className="font-bold-h text-white text-[42px] sm:text-[64px] lg:text-[84px] leading-[0.95]"
                         style={{ letterSpacing: "0.14em" }}
@@ -116,7 +105,13 @@ export const Hero: React.FC = () => {
                 </div>
                 <div className="overflow-hidden mt-5">
                     <motion.p
-                        variants={lineVariants}
+                        variants={{
+                            hidden: { y: "110%" },
+                            show: {
+                                y: "0%",
+                                transition: { duration: 1.0, ease: [0.22, 1, 0.36, 1] },
+                            },
+                        }}
                         data-testid="hero-tagline"
                         className="font-ital text-white/70 text-lg sm:text-2xl"
                     >
@@ -140,5 +135,3 @@ export const Hero: React.FC = () => {
         </section>
     );
 };
-
-export default Hero;

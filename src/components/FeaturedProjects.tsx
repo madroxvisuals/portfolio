@@ -83,8 +83,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 }}
             >
                 <div className="font-sm text-[10px] uppercase tracking-[0.34em]"
-                     style={{ color: data.accent }}>
-                    {data.sub}
+                     style={{ color: data.categoryColor }}>
+                    {data.category}
                 </div>
                 <div className="font-bold-h text-white text-sm mt-1">{data.label}</div>
             </figcaption>

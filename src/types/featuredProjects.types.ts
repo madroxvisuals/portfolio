@@ -1,9 +1,9 @@
 export interface Post {
     img: string;
-    accent: string;
-    fg: string;
+    categoryColor: string;
+    labelColor: string;
     label: string;
-    sub: string;
+    category: string;
     devanagari: string;
 }
 
