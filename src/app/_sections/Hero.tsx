@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { IMG_PATHS } from "@/constants";
+import { RESOURCE_PATHS } from "@/constants/app.constants";
 import React, { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 
@@ -72,7 +72,7 @@ export default function Hero() {
                 className="relative"
             >
                 <div className="logo-float">
-                    <Image src={IMG_PATHS.logo_without_text} alt="Madrox Logo" width={250} height={250} />
+                    <Image src={RESOURCE_PATHS.logo_without_text} alt="Madrox Logo" width={250} height={250} />
                 </div>
             </motion.div>
 

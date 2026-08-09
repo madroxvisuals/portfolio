@@ -1,14 +1,14 @@
-import Header from "@/components/Header";
+import Header from "@/app/_sections/Header";
 import Hero from "@/app/_sections/Hero";
-import Services from "@/components/Services";
+import Services from "@/app/_sections/Services";
 import Marquee from "@/app/_sections/Marquee";
-import HowWeWork from "@/components/HowWeWork";
-import CtaFooter from "@/components/CtaFooter";
+import HowWeWork from "@/app/_sections/HowWeWork";
+import CtaFooter from "@/app/_sections/Footer/CtaFooter";
 import About from "@/app/_sections/About/About";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import Testimonials from "@/components/Testimonials";
+import WhyChooseUs from "@/app/_sections/WhyChooseUs";
+import Testimonials from "@/app/_sections/Testimonials/Testimonials";
 import BrandSnapshots from "@/app/_sections/BrandSnapshots/BrandSnapshots";
-import FeaturedProjects from "@/components/FeaturedProjects";
+import FeaturedProjects from "@/app/_sections/FeaturedProjects/FeaturedProjects";
 
 export default function Home() {
   return (

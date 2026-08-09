@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { IMG_PATHS } from "@/constants";
+import { RESOURCE_PATHS } from "@/constants/app.constants";
 import { motion } from "motion/react";
 import SectionIntro from "@/app/_sections/About/_components/SectionIntro";
 import {
@@ -42,7 +42,7 @@ export default function About() {
                         copyTestId="about-copy"
                     />
                     <motion.div variants={fadeUp} className="mt-10 flex items-center gap-4">
-                        <Image src={IMG_PATHS.logo_without_text} alt="Madrox Logo" width={80}
+                        <Image src={RESOURCE_PATHS.logo_without_text} alt="Madrox Logo" width={80}
                                height={80}/>
                         <div className="flex flex-col">
                             <span

@@ -1,5 +1,5 @@
 export interface Post {
-    img: string;
+    src: string;
     categoryColor: string;
     labelColor: string;
     label: string;
@@ -19,9 +19,10 @@ export interface GallerySection {
     title: string;
     subtitle: string;
     posts: Post[];
-    showWatermark?: boolean;
     captionLeft: string;
     captionRight: string;
+    showWatermark?: boolean;
+    showCategorySection?: boolean;
 }
 
 
