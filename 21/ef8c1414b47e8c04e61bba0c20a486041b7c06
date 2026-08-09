@@ -1,0 +1,96 @@
+src/app/_sections/BrandSnapshots/_components/MobileNode.tsx
+  s_df678578094447::t_d7269f2910863e 12
+  s_df678578094447::t_60afe12ac9ed56 1
+  s_df678578094447::t_0393fe3aabf4e2 7-10
+  s_df678578094447::t_8ae1b907f3a408 11
+  h_1dd7bb9db9f819 2,6
+  s_df678578094447::t_1c2eae1eae87c8 13-26
+  s_df678578094447::t_93037390d2475a 27-28
+  h_1dd7bb9db9f819 3-5
+src/app/_sections/BrandSnapshots/_components/DesktopNodeMaker.tsx
+  s_df678578094447::t_01cd9e61fd2925 5-11,14-26
+  s_df678578094447::t_c566274ebebc7f 13
+  s_df678578094447::t_1519c5dacecc67 27-28
+  h_1dd7bb9db9f819 3
+  s_df678578094447::t_7ac709db65eebc 12
+  h_1dd7bb9db9f819 1-2,4
+src/app/page.tsx
+  h_1dd7bb9db9f819 2,4,10
+src/api.service.ts
+  h_1dd7bb9db9f819 3
+src/constants/brandSanpshots.constants.ts
+  s_df678578094447::t_228d4133c5601e 61
+  s_df678578094447::t_152be67b08d777 26
+  s_df678578094447::t_76c4f22f3f4574 76
+  h_1dd7bb9db9f819 3
+  s_df678578094447::t_4ecf1435783b0e 79
+  s_df678578094447::t_b20ca175ae549d 11
+  s_df678578094447::t_63ce4fd199cfb6 20-25
+  s_df678578094447::t_8b0236a9aab0b2 68
+  s_df678578094447::t_e66e1948a7a1ea 70
+  s_df678578094447::t_c61d35a9f8a6c1 80
+  s_df678578094447::t_e6c17a583c5407 8
+  s_df678578094447::t_c52298e71f19fd 9,12-17,30-31,35-52,55-59,62-66,71-75,77-78,81-83
+  s_df678578094447::t_2b10d1dc4eeb0b 33-34
+  s_df678578094447::t_13e29b3690a065 54
+  s_df678578094447::t_4cef3ca26e2b3a 32
+  s_df678578094447::t_6a3ea9f45ee766 10
+  s_df678578094447::t_b89eae43dd6615 19
+  s_df678578094447::t_b070aa14d6d3d4 4-6
+  s_df678578094447::t_01a5220f189564 7
+  s_df678578094447::t_328ba62c03cf1e 18
+  s_df678578094447::t_129b60b0ba1c10 27-29
+  s_df678578094447::t_99b36aee8f1f0c 53
+  s_df678578094447::t_9b16f15fd2bd10 60
+  s_df678578094447::t_051b35a0971a51 67
+  s_df678578094447::t_f2cba4b66f6ca6 69
+  h_1dd7bb9db9f819 1-2
+src/constants.ts
+  s_df678578094447::t_d4fe9a0b658623 162
+  h_1dd7bb9db9f819 110-117,190,198,206,214,222,238,254,262,270,278,286,294
+  s_df678578094447::t_943169238da182 173
+  s_df678578094447::t_ef16089b1804d4 171-172
+  s_df678578094447::t_b46d4e7c207588 174-176
+  h_1dd7bb9db9f819 177-180
+src/app/_sections/BrandSnapshots/BrandSnapshots.tsx
+  h_1dd7bb9db9f819 4,9-11,14,25,37,41,69,74-77,82,97
+  h_1dd7bb9db9f819 5-8,12-13,15-17,66-67,105
+src/app/_sections/BrandSnapshots/_components/DesktopNodeLabel.tsx
+  s_df678578094447::t_66bd0c4d0995e4 6-10,12,14-33
+  s_df678578094447::t_2bfdb733502f67 34
+  h_1dd7bb9db9f819 2,5,11
+  s_df678578094447::t_25d2f7e4f233d2 1
+  s_df678578094447::t_402700ad4d151c 3
+  s_df678578094447::t_886f29b88da638 13
+  h_1dd7bb9db9f819 4
+src/types/featuredProjects.types.ts
+  s_df678578094447::t_0d7404956a9d69 7,12
+  s_df678578094447::t_9fc188bb8960c3 10
+  s_df678578094447::t_2cdba876eca73e 11
+  s_df678578094447::t_bae274b9054fc7 9
+  s_df678578094447::t_8186609f523f2c 13
+  s_df678578094447::t_475587359f6197 8
+src/app/_sections/Marquee.tsx
+  h_1dd7bb9db9f819 3,11-19,28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "21ef8c1414b47e8c04e61bba0c20a486041b7c06",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_df678578094447": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786254299432",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
