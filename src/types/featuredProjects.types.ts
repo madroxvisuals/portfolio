@@ -17,8 +17,8 @@ export interface GallerySection {
     id: string;
     chapter: string;
     title: string;
-    subtitle: string;
     posts: Post[];
+    subtitle?: string;
     hasVideos?: boolean;
     showWatermark?: boolean;
     showCategorySection?: boolean;

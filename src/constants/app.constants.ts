@@ -189,8 +189,6 @@ export const GALLERIES: GallerySection[] = [
         id: "brand",
         chapter: "08 · Featured Projects 3",
         title: "Brand Identity",
-        subtitle:
-            "Feed-scroll stoppers — cultural, editorial, and performance-driven creative for brands.",
         posts: BRAND_IDENTITY_POSTS,
         showCategorySection: false
     },
