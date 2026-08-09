@@ -14,6 +14,11 @@ export const TOAST_MSG = {
 } as const;
 
 export const RESOURCE_PATHS = {
+
+    // Profile Photo
+    profile: "/img/profile.jpeg",
+
+    // Logos
     logo_without_text: "/logo_without_text.png",
     logo_with_text: "/logo_with_text.png",
 

@@ -2,14 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
-import { RESOURCE_PATHS } from "@/constants/app.constants";
 import { motion } from "motion/react";
+import { RESOURCE_PATHS } from "@/constants/app.constants";
 import SectionIntro from "@/app/_sections/About/_components/SectionIntro";
 import {
     fadeUp,
     DIVIDER_DOT_STYLE,
     GOLD_TEXT_STYLE,
-    PORTRAIT_BG_STYLE,
     staggerContainer,
     VIEWPORT_ONCE,
     WORDMARK_SUB_STYLE,
@@ -24,7 +23,7 @@ export default function About() {
             className="relative py-28 sm:py-36 px-6"
         >
             <div
-                className="max-w-[1280px] mx-auto grid lg:grid-cols-[1fr_auto_1fr] gap-14 lg:gap-8 items-start">
+                className="max-w-7xl mx-auto grid lg:grid-cols-[1fr_auto_1fr] gap-14 lg:gap-8 items-start">
                 {/* LEFT — About */}
                 <motion.div
                     variants={staggerContainer}
@@ -63,7 +62,7 @@ export default function About() {
 
                 {/* Divider */}
                 <div className="hidden lg:flex justify-center relative">
-                    <div className="w-[1px] bg-white/15 h-full min-h-[420px] relative">
+                    <div className="w-px bg-white/15 h-full min-h-105 relative">
                         <span className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full" style={DIVIDER_DOT_STYLE}/>
                     </div>
                 </div>
@@ -90,14 +89,13 @@ export default function About() {
                         <div
                             data-testid="founder-portrait-placeholder"
                             className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden glass"
-                            style={PORTRAIT_BG_STYLE}
                         >
-                            <span
-                                className="absolute inset-x-0 bottom-1 text-center font-sm text-[9px] uppercase text-white/40 tracking-[0.3em]"
-                                data-testid="founder-portrait-label"
-                            >
-                                Portrait
-                            </span>
+                            <Image
+                                src={RESOURCE_PATHS.profile}
+                                alt="Mohit - Founder"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                         <div>
                             <div
