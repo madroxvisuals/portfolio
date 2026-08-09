@@ -1,10 +1,10 @@
-import Header from "@/app/_sections/Header";
 import Hero from "@/app/_sections/Hero";
-import Services from "@/app/_sections/Services";
+import Header from "@/app/_sections/Header";
 import Marquee from "@/app/_sections/Marquee";
-import HowWeWork from "@/app/_sections/HowWeWork";
-import CtaFooter from "@/app/_sections/Footer/CtaFooter";
+import Services from "@/app/_sections/Services";
 import About from "@/app/_sections/About/About";
+import HowWeWork from "@/app/_sections/HowWeWork";
+import Footer from "@/app/_sections/Footer/Footer";
 import WhyChooseUs from "@/app/_sections/WhyChooseUs";
 import Testimonials from "@/app/_sections/Testimonials/Testimonials";
 import BrandSnapshots from "@/app/_sections/BrandSnapshots/BrandSnapshots";
@@ -24,7 +24,7 @@ export default function Home() {
               <FeaturedProjects />
               <HowWeWork />
               <Testimonials />
-              <CtaFooter />
+              <Footer />
           </main>
       </div>
   );

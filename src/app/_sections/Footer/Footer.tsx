@@ -1,78 +1,27 @@
 "use client";
 
-import React, { useCallback, useRef, useActionState } from "react";
+import { useActionState } from "react";
 import Image from "next/image";
 import { tryCatch } from "@/utils";
+import { motion } from "motion/react";
 import { toast, Toaster } from "sonner";
 import { MoveRight } from 'lucide-react';
 import axios, { AxiosResponse } from "axios";
-import { motion, type Variants } from "motion/react";
+import Field from "@/app/_sections/Footer/_components/Field";
+import Magnetic from "@/app/_sections/Footer/_components/Magnetic";
 import { RESOURCE_PATHS, TOAST_MSG } from "@/constants/app.constants";
 import { CONTACT_FORM_FIELDS, ContactFormState } from "@/types/app.types";
-
-/**
- * Final CTA / Contact footer with magnetic hover on CTA links,
- * italic "Let's Create" over a bold "Something Exceptional",
- * and clickable email/phone/instagram row.
- */
-
-// ── Hoisted static objects (avoid re-allocating identical objects every render) ──
-const AURA_STYLE: React.CSSProperties = {
-    background:
-        "radial-gradient(700px 500px at 50% 55%, rgba(232,185,35,0.10), transparent 70%)",
-};
-
-const GOLD_DOT_STYLE: React.CSSProperties = { background: "var(--madrox-gold)" };
-
-const HEADLINE_STYLE: React.CSSProperties = { letterSpacing: "-0.02em" };
-
-const VIEWPORT_ONCE = { once: true } as const;
-const VIEWPORT_ONCE_AMOUNT_15 = { once: true, amount: 0.15 } as const;
-
-const EASE_OUT = [0.22, 1, 0.36, 1] as const;
-
-const micronavMotion = {
-    initial: { opacity: 0, y: 10 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: VIEWPORT_ONCE,
-    transition: { duration: 0.8 },
-};
-
-const letsCreateMotion = {
-    initial: { opacity: 0, y: 20 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: VIEWPORT_ONCE,
-    transition: { duration: 1.0, ease: EASE_OUT, delay: 0.1 },
-};
-
-const headlineMotion = {
-    initial: { opacity: 0, y: 40 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: VIEWPORT_ONCE_AMOUNT_15,
-    transition: { duration: 1.1, ease: EASE_OUT, delay: 0.2 },
-};
-
-const contactRowMotion = {
-    initial: { opacity: 0, y: 20 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: VIEWPORT_ONCE,
-    transition: { duration: 0.9, delay: 0.4 },
-};
-
-const fadeUp: Variants = {
-    hidden: { opacity: 0, y: 24 },
-    show: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.8, ease: EASE_OUT },
-    },
-};
-
-interface FieldProps {
-    label: string;
-    name: string;
-    children: React.ReactNode;
-}
+import {
+    AURA_STYLE,
+    contactRowMotion,
+    EASE_OUT,
+    GOLD_DOT_STYLE,
+    HEADLINE_STYLE,
+    headlineMotion,
+    inputStyle,
+    letsCreateMotion,
+    micronavMotion
+} from "@/constants/footer.constants";
 
 const formInitialState: ContactFormState = {
     name: "",
@@ -81,58 +30,7 @@ const formInitialState: ContactFormState = {
     message: "",
 };
 
-const inputStyle: React.CSSProperties = {
-    width: "100%",
-    marginTop: 10,
-    background: "var(--mx-black)",
-    color: "var(--mx-white)",
-    border: "1px solid var(--mx-hairline)",
-    borderRadius: 4,
-    fontFamily: "Inter, sans-serif",
-    fontSize: 14,
-    padding: "12px 14px",
-    outline: "none",
-};
-
-// ── Magnetic link ──
-
-interface MagneticProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-    children: React.ReactNode;
-    className?: string;
-}
-
-const Magnetic: React.FC<MagneticProps> = ({ children, className = "", ...rest }) => {
-    const ref = useRef<HTMLAnchorElement>(null);
-
-    // useCallback so these handlers keep a stable identity across renders
-    // instead of being recreated (and reattached) on every render.
-    const onMove = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
-        const el = ref.current;
-        if (!el) return;
-        const r = el.getBoundingClientRect();
-        const x = e.clientX - r.left - r.width / 2;
-        const y = e.clientY - r.top - r.height / 2;
-        el.style.transform = `translate(${x * 0.15}px, ${y * 0.2}px)`;
-    }, []);
-
-    const onLeave = useCallback(() => {
-        if (ref.current) ref.current.style.transform = "translate(0,0)";
-    }, []);
-
-    return (
-        <a
-            ref={ref}
-            className={`inline-block transition-transform duration-300 ${className}`}
-            onMouseMove={onMove}
-            onMouseLeave={onLeave}
-            {...rest}
-        >
-            {children}
-        </a>
-    );
-};
-
-export const CtaFooter: React.FC = React.memo(() => {
+export default function Footer() {
     const handleSubmit = async (prev: ContactFormState, formData: FormData): Promise<ContactFormState> => {
         const payload: ContactFormState = {
             name: String(formData.get(CONTACT_FORM_FIELDS.NAME) ?? ""),
@@ -239,7 +137,14 @@ export const CtaFooter: React.FC = React.memo(() => {
 
                 {/* Contact form */}
                 <motion.form
-                    variants={fadeUp}
+                    variants={{
+                        hidden: { opacity: 0, y: 24 },
+                        show: {
+                            opacity: 1,
+                            y: 0,
+                            transition: { duration: 0.8, ease: EASE_OUT },
+                        },
+                    }}
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
@@ -362,37 +267,10 @@ export const CtaFooter: React.FC = React.memo(() => {
                     <div className="h-px w-40 hairline-gold opacity-60"/>
                     <Image src={RESOURCE_PATHS.logo_without_text} alt="Madrox Logo" width={80} height={80} />
                     <div className="font-sm text-[10px] uppercase text-white/40 tracking-[0.4em]">
-                        © 2026 Designed by MADROX VISUALS
+                        © 2026 Designed by Vivek Dahiya
                     </div>
                 </div>
             </div>
         </section>
     );
-});
-CtaFooter.displayName = "CtaFooter";
-
-export default CtaFooter;
-
-const Field: React.FC<FieldProps> = ({ label, name, children }) => (
-    <label
-        htmlFor={name}
-        style={{
-            display: "block",
-            textAlign: "left",
-            marginTop: 16,
-        }}
-    >
-        <span
-            style={{
-                color: "var(--mx-white-muted)",
-                fontFamily: "Inter, sans-serif",
-                fontSize: 11,
-                textTransform: "uppercase",
-                letterSpacing: "0.16em",
-            }}
-        >
-            {label}
-        </span>
-        {children}
-    </label>
-);
+};
