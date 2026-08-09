@@ -45,6 +45,9 @@ export const GRAPHICS_POSTS: Post[] = [
         labelColor: "#f4ffe8",
         label: "Cadillac Deville",
         category: "Cadillac Deville · Commercial Design",
+        offset: {
+            top:"top"
+        }
     },
     {
         src: RESOURCE_PATHS.cartier,
@@ -52,6 +55,9 @@ export const GRAPHICS_POSTS: Post[] = [
         labelColor: "#ffffff",
         label: "Cartier",
         category: "Cartier · Ad Campaign",
+        offset: {
+            top:"top"
+        }
     },
     {
         src: RESOURCE_PATHS.khamma,
@@ -59,6 +65,9 @@ export const GRAPHICS_POSTS: Post[] = [
         labelColor: "#fff2fa",
         label: "Khamma Ghani",
         category: "Khamma Ghani · Cultural Artwork",
+        offset: {
+            top:"top"
+        }
     },
     {
         src: RESOURCE_PATHS.morbagh,
@@ -66,6 +75,9 @@ export const GRAPHICS_POSTS: Post[] = [
         labelColor: "#ede4c8",
         label: "Morbagh Livings",
         category: "Morbagh Livings · Decor Brand",
+        offset: {
+            top:"top"
+        }
     },
     {
         src: RESOURCE_PATHS.rovena,
@@ -73,8 +85,12 @@ export const GRAPHICS_POSTS: Post[] = [
         labelColor: "#fff6d6",
         label: "Rovena",
         category: "Rovena · Streetwear Brand",
+        offset: {
+            top:"top"
+        }
     },
 ]
+
 export const BRAND_IDENTITY_POSTS: Post[] = [
     {
         src: RESOURCE_PATHS.id_1,

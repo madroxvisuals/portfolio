@@ -23,12 +23,10 @@ export default function ProjectCard({
                                     }: ProjectCardProps) {
     const aspectClass = ASPECT_CLASSES[aspect];
 
-    const mediaStyle: React.CSSProperties = {
-        top: data.offset?.top ?? 0,
-        bottom: data.offset?.bottom ?? 0,
-        left: data.offset?.left ?? 0,
-        right: data.offset?.right ?? 0,
-    };
+    // Build position string from offset (e.g., "center top", "20% 30%")
+    const horizontalPos = data.offset?.left ?? data.offset?.right ?? "center";
+    const verticalPos = data.offset?.top ?? data.offset?.bottom ?? "center";
+    const position = `${horizontalPos} ${verticalPos}`;
 
     return (
         <motion.figure
@@ -42,8 +40,8 @@ export default function ProjectCard({
         >
             {isVideo ? (
                 <video
-                    className="absolute object-cover w-full h-full transition-transform duration-700 group-hover:scale-[1.06]"
-                    style={mediaStyle}
+                    className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-[1.06]"
+                    style={{ objectFit: "cover", objectPosition: position }}
                     src={data.src}
                     autoPlay
                     loop
@@ -52,12 +50,11 @@ export default function ProjectCard({
                 />
             ) : (
                 <div
-                    className="absolute transition-transform duration-700 group-hover:scale-[1.06]"
+                    className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.06]"
                     style={{
-                        ...mediaStyle,
                         backgroundImage: `url(${data.src})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
+                        backgroundSize: "cover",
+                        backgroundPosition: position,
                     }}
                 />
             )}
