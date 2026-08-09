@@ -1,0 +1,82 @@
+src/constants/whyChooseUs.constants.ts
+  h_1dd7bb9db9f819 1-32
+src/app/_sections/Services.tsx
+  h_1dd7bb9db9f819 5,24
+  s_d1e4dfcdb42535::t_6759d7f84765ce 8-12
+  h_1dd7bb9db9f819 4,14,21,33,95
+src/app/_sections/Hero.tsx
+  h_1dd7bb9db9f819 4,75
+src/constants/howWeWork.constants.ts
+  h_1dd7bb9db9f819 2
+  s_d1e4dfcdb42535::t_712da664a2ba30 4-28
+  s_d1e4dfcdb42535::t_85eee2d39ead16 1
+  h_1dd7bb9db9f819 3
+src/app/_sections/FeaturedProjects/FeaturedProjects.tsx
+  h_1dd7bb9db9f819 4-5,7-8,10,48,106,148
+src/app/_sections/Testimonials/Testimonials.tsx
+  h_1dd7bb9db9f819 4-7,9,16,18,27,66,78
+src/app/_sections/HowWeWork.tsx
+  h_1dd7bb9db9f819 5-7,9,16,18,27
+src/constants/app.constants.ts
+  s_d1e4dfcdb42535::t_7fbd6702882094 36
+  h_1dd7bb9db9f819 2,15,19,26,33,40,43,50,57,64,71,80,87,94,101,108,115,146-147,182
+  s_d1e4dfcdb42535::t_485459c86f4ef3 179
+  s_d1e4dfcdb42535::t_a2cd282b2511bd 35
+  s_d1e4dfcdb42535::t_49beae0d56fafa 37
+  s_d1e4dfcdb42535::t_d266e7eaa166f6 38
+  s_d1e4dfcdb42535::t_cc6691027e9ec2 16
+  s_d1e4dfcdb42535::t_c58355a23d59c7 34
+  s_d1e4dfcdb42535::t_413545a35c0df6 139
+  s_d1e4dfcdb42535::t_1a52774ca0075a 168
+  s_d1e4dfcdb42535::t_b2277684fe44ba 169-171,176-178
+  h_1dd7bb9db9f819 1,3-14,17-18,20-25,27-32,39,41-42,44-49,51-56,58-63,65-70,72-79,81-86,88-93,95-100,102-107,109-114,116-138,140-145,148-167,172-175,180-181,183-296
+src/app/_sections/Footer/CtaFooter.tsx
+  h_1dd7bb9db9f819 8-9
+  h_1dd7bb9db9f819 277,290,304,351,369
+src/types/featuredProjects.types.ts
+  s_d1e4dfcdb42535::t_547dc677ffbf93 2
+  s_d1e4dfcdb42535::t_27854314a777b8 25
+  s_d1e4dfcdb42535::t_6496170469ce75 24
+src/app/_sections/Header.tsx
+  h_1dd7bb9db9f819 4,6,9-15,17,54,69
+src/types/testimonials.types.ts
+  s_d1e4dfcdb42535::t_8fe874da442ad0 2
+  s_d1e4dfcdb42535::t_17f223d4c87c5d 3-7
+  s_d1e4dfcdb42535::t_f3902a3d2be190 1
+src/app/page.tsx
+  h_1dd7bb9db9f819 1,3,5-6,8-9,11
+src/app/_sections/Testimonials/_components/Stars.tsx
+  s_d1e4dfcdb42535::t_db07ae051083b6 39-49
+  s_d1e4dfcdb42535::t_1e589f6d2e2f0a 5-8
+  h_1dd7bb9db9f819 1,4,9,11,38
+  s_d1e4dfcdb42535::t_7d7aa0a51612ad 10,12-37
+  h_1dd7bb9db9f819 2-3
+src/app/_sections/WhyChooseUs.tsx
+  h_1dd7bb9db9f819 3-4,14,21,55,64,94
+src/constants/testimonials.constants.ts
+  s_d1e4dfcdb42535::t_20590f74206108 4-47
+  h_1dd7bb9db9f819 1-3,48-49
+src/app/_sections/About/About.tsx
+  h_1dd7bb9db9f819 5,45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "7e207790de4cb911a93be6b2e6869e02c425947e",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_d1e4dfcdb42535": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786281991032",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
