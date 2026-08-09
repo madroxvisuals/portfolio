@@ -1,0 +1,46 @@
+src/types/featuredProjects.types.ts
+  s_d1e4dfcdb42535::t_02498a944ea7f2 3
+  s_d1e4dfcdb42535::t_03c92c0b24a550 6
+  s_d1e4dfcdb42535::t_ef7603eaa8d868 24
+  s_d1e4dfcdb42535::t_e17d6e8fbad74a 5
+  s_d1e4dfcdb42535::t_8ed3be91075a06 4
+src/app/_sections/FeaturedProjects/_components/ProjectCard.tsx
+  s_e0eeb1e14875a5::t_e166a97abad395 25-32,43-63
+  s_e0eeb1e14875a5::t_c6354c0963049e 11,20,88-103
+  s_e0eeb1e14875a5::t_ec3575c5fc1e50 12,21
+src/app/_sections/FeaturedProjects/FeaturedProjects.tsx
+  h_1dd7bb9db9f819 41
+  s_d1e4dfcdb42535::t_bd05c986efa3d4 42
+src/constants/app.constants.ts
+  s_d1e4dfcdb42535::t_82f402d18bd2a9 169
+  s_d1e4dfcdb42535::t_80da31bf2b4ef4 168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "4627e6499bce8568da36f00fa0d7bd2b1c153b0a",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_d1e4dfcdb42535": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786281991032",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    },
+    "s_e0eeb1e14875a5": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "27a30085-03cd-4c68-8482-c17a254544b7",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
