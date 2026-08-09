@@ -165,7 +165,8 @@ export const GALLERIES: GallerySection[] = [
         posts: VIDEO_POSTS,
         captionLeft: "Video Editing",
         captionRight: "Motion Graphics",
-        showCategorySection: false
+        showCategorySection: false,
+        hasVideos: true,
     },
     {
         id: "brand",

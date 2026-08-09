@@ -38,6 +38,8 @@ export default function FeaturedProjects() {
                                         data={galleryData}
                                         showWatermark={gallery.showWatermark}
                                         testId={`proj-${index}`}
+                                        showCategorySection={gallery.showCategorySection ?? false}
+                                        isVideo={gallery.hasVideos ?? false}
                                     />)
                             })}
                         </div>

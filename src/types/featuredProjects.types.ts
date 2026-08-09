@@ -1,9 +1,9 @@
 export interface Post {
     src: string;
-    categoryColor: string;
-    labelColor: string;
-    label: string;
-    category: string;
+    categoryColor?: string;
+    labelColor?: string;
+    label?: string;
+    category?: string;
     offset?: {
         top?: string;
         bottom?: string;
@@ -21,6 +21,7 @@ export interface GallerySection {
     posts: Post[];
     captionLeft: string;
     captionRight: string;
+    hasVideos?: boolean;
     showWatermark?: boolean;
     showCategorySection?: boolean;
 }

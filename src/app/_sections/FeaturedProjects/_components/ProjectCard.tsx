@@ -8,6 +8,8 @@ interface ProjectCardProps {
     aspect?: CardAspect;
     size?: CardSize;
     showWatermark?: boolean;
+    showCategorySection?: boolean;
+    isVideo?: boolean;
     testId?: string;
 }
 
@@ -15,9 +17,19 @@ export default function ProjectCard({
                                         data,
                                         aspect = "portrait",
                                         showWatermark = false,
+                                        showCategorySection = false,
+                                        isVideo = false,
                                         testId,
                                     }: ProjectCardProps) {
     const aspectClass = ASPECT_CLASSES[aspect];
+
+    const mediaStyle: React.CSSProperties = {
+        top: data.offset?.top ?? 0,
+        bottom: data.offset?.bottom ?? 0,
+        left: data.offset?.left ?? 0,
+        right: data.offset?.right ?? 0,
+    };
+
     return (
         <motion.figure
             initial={{ opacity: 0, y: 30 }}
@@ -28,14 +40,27 @@ export default function ProjectCard({
             className={`group relative ${aspectClass} rounded-2xl overflow-hidden glass p-0`}
             data-testid={testId}
         >
-            <div
-                className="absolute inset-0 transition-transform duration-700 group-hover:scale-[1.06]"
-                style={{
-                    backgroundImage: `url(${data.src})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                }}
-            />
+            {isVideo ? (
+                <video
+                    className="absolute object-cover w-full h-full transition-transform duration-700 group-hover:scale-[1.06]"
+                    style={mediaStyle}
+                    src={data.src}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                />
+            ) : (
+                <div
+                    className="absolute transition-transform duration-700 group-hover:scale-[1.06]"
+                    style={{
+                        ...mediaStyle,
+                        backgroundImage: `url(${data.src})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                    }}
+                />
+            )}
             {/* Spotlight ring */}
             <div
                 aria-hidden
@@ -60,20 +85,22 @@ export default function ProjectCard({
             )}
 
             {/* Caption slide-up */}
-            <figcaption
-                className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500"
-                style={{
-                    background:
-                        "linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,0.85) 60%)",
-                    backdropFilter: "blur(6px)",
-                }}
-            >
-                <div className="font-sm text-[10px] uppercase tracking-[0.34em]"
-                     style={{ color: data.categoryColor }}>
-                    {data.category}
-                </div>
-                <div className="font-bold-h text-white text-sm mt-1">{data.label}</div>
-            </figcaption>
+            {showCategorySection && (
+                <figcaption
+                    className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                    style={{
+                        background:
+                            "linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,0.85) 60%)",
+                        backdropFilter: "blur(6px)",
+                    }}
+                >
+                    <div className="font-sm text-[10px] uppercase tracking-[0.34em]"
+                         style={{ color: data.categoryColor }}>
+                        {data.category}
+                    </div>
+                    <div className="font-bold-h text-white text-sm mt-1">{data.label}</div>
+                </figcaption>
+            )}
         </motion.figure>
     );
 };
