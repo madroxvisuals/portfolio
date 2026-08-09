@@ -78,6 +78,7 @@ export default function Header() {
             aria-label="Toggle menu"
             className="md:hidden w-9 h-9 grid place-items-center rounded-full border border-white/15 text-white"
             onClick={() => setOpen((v) => !v)}
+            suppressHydrationWarning
           >
             <span className="block w-4 h-[1.5px] bg-white relative before:content-[''] before:absolute before:-top-[5px] before:left-0 before:w-4 before:h-[1.5px] before:bg-white after:content-[''] after:absolute after:top-[5px] after:left-0 after:w-4 after:h-[1.5px] after:bg-white" />
           </button>

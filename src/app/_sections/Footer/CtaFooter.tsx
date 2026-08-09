@@ -4,6 +4,7 @@ import React, { useCallback, useRef, useActionState } from "react";
 import Image from "next/image";
 import { tryCatch } from "@/utils";
 import { toast, Toaster } from "sonner";
+import { MoveRight } from 'lucide-react';
 import axios, { AxiosResponse } from "axios";
 import { motion, type Variants } from "motion/react";
 import { RESOURCE_PATHS, TOAST_MSG } from "@/constants/app.constants";
@@ -350,15 +351,8 @@ export const CtaFooter: React.FC = React.memo(() => {
                             }}
                             suppressHydrationWarning
                         >
-                            <span
-                                style={{
-                                    width: 6,
-                                    height: 6,
-                                    borderRadius: 999,
-                                    background: "var(--mx-gold)",
-                                }}
-                            />
                             {isPending ? "Sending…" : "Send Enquiry"}
+                            <MoveRight style={{ color: "var(--madrox-gold)" }} size={18} />
                         </button>
                     </div>
                 </motion.form>

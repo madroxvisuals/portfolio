@@ -234,8 +234,10 @@ html.lenis body {
 
 /* Gold button ghost */
 .btn-ghost-gold {
-    display: inline-flex;
+    flex-grow: 1;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     padding: 14px 28px;
     border: 1px solid var(--mx-gold);
