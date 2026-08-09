@@ -88,7 +88,7 @@ export default function About() {
                     <motion.div variants={fadeUp} className="mt-10 flex items-center gap-6">
                         <div
                             data-testid="founder-portrait-placeholder"
-                            className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden glass"
+                            className="flex-1 sm:flex-none relative w-40 h-40 sm:w-36 sm:h-36 rounded-2xl overflow-hidden glass"
                         >
                             <Image
                                 src={RESOURCE_PATHS.profile}
@@ -97,7 +97,7 @@ export default function About() {
                                 className="object-cover"
                             />
                         </div>
-                        <div>
+                        <div className="flex-1 sm:flex-none">
                             <div
                                 className="font-bold-h text-2xl sm:text-3xl"
                                 style={GOLD_TEXT_STYLE}

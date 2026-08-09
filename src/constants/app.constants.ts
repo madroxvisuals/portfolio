@@ -174,8 +174,6 @@ export const GALLERIES: GallerySection[] = [
         subtitle:
             "A selection of poster and product design work — colour-forward, mood-driven, print-ready.",
         posts: GRAPHICS_POSTS,
-        captionLeft: "Selected Works",
-        captionRight: "Graphic Designs",
     },
     {
         id: "video",
@@ -184,8 +182,6 @@ export const GALLERIES: GallerySection[] = [
         subtitle:
             "Cinematic edits and title-treatment reels — duotone stills stand in for the moving frame.",
         posts: VIDEO_POSTS,
-        captionLeft: "Video Editing",
-        captionRight: "Motion Graphics",
         showCategorySection: false,
         hasVideos: true,
     },
@@ -196,8 +192,6 @@ export const GALLERIES: GallerySection[] = [
         subtitle:
             "Feed-scroll stoppers — cultural, editorial, and performance-driven creative for brands.",
         posts: BRAND_IDENTITY_POSTS,
-        captionLeft: "Selected Works",
-        captionRight: "Brand Identity",
         showCategorySection: false
     },
 ];
