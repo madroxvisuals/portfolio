@@ -1,6 +1,6 @@
 import { tryCatch } from "@/utils";
-import { ContactFormState } from "@/types";
 import { sendEmail } from "@/api.service";
+import { ContactFormState } from "@/types/app.types";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET() {
