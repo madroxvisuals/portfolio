@@ -1,11 +1,6 @@
 import React from "react";
 
-/**
- * Slow editorial marquee — one refined kinetic band, gold hairline separators.
- * Purely presentational; a bookmark between chapters.
- */
-export const Marquee = ({ testId = "editorial-marquee" }) => {
-  const items = [
+const textItems = [
     "Madrox Visuals",
     "Designed to Be Remembered",
     "Est. 2024",
@@ -13,8 +8,15 @@ export const Marquee = ({ testId = "editorial-marquee" }) => {
     "Premium Creative Studio",
     "Purposeful Design",
     "Visual Storytelling",
-  ];
-  const row = [...items, ...items];
+];
+
+const scrollingText = [...textItems, ...textItems];
+
+/**
+ * Infinite Scrolling Marquee Component
+ */
+export default function Marquee({ testId = "editorial-marquee" }){
+
 
   return (
     <div
@@ -23,7 +25,7 @@ export const Marquee = ({ testId = "editorial-marquee" }) => {
       style={{ background: "rgba(255,255,255,0.015)" }}
     >
       <div className="marquee-track flex whitespace-nowrap will-change-transform">
-        {row.map((label, i) => (
+        {scrollingText.map((label, i) => (
           <div key={i} className="flex items-center shrink-0 pr-14">
             <span
               className="marquee-font uppercase text-white/85 text-[42px] sm:text-[64px] leading-none"
@@ -44,5 +46,3 @@ export const Marquee = ({ testId = "editorial-marquee" }) => {
     </div>
   );
 };
-
-export default Marquee;

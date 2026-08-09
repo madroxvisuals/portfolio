@@ -39,7 +39,6 @@ export const GRAPHICS_POSTS: Post[] = [
         labelColor: "#f4ffe8",
         label: "Cadillac Deville",
         category: "Cadillac Deville · Commercial Design",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.cartier,
@@ -47,7 +46,6 @@ export const GRAPHICS_POSTS: Post[] = [
         labelColor: "#ffffff",
         label: "Cartier",
         category: "Cartier · Ad Campaign",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.khamma,
@@ -55,7 +53,6 @@ export const GRAPHICS_POSTS: Post[] = [
         labelColor: "#fff2fa",
         label: "Khamma Ghani",
         category: "Khamma Ghani · Cultural Artwork",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.morbagh,
@@ -63,7 +60,6 @@ export const GRAPHICS_POSTS: Post[] = [
         labelColor: "#ede4c8",
         label: "Morbagh Livings",
         category: "Morbagh Livings · Decor Brand",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.rovena,
@@ -71,7 +67,6 @@ export const GRAPHICS_POSTS: Post[] = [
         labelColor: "#fff6d6",
         label: "Rovena",
         category: "Rovena · Streetwear Brand",
-        devanagari: "",
     },
 ]
 export const BRAND_IDENTITY_POSTS: Post[] = [
@@ -81,7 +76,6 @@ export const BRAND_IDENTITY_POSTS: Post[] = [
         labelColor: "#f4ffe8",
         label: "Cadillac Deville",
         category: "Cadillac Deville · Commercial Design",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.id_2,
@@ -89,7 +83,6 @@ export const BRAND_IDENTITY_POSTS: Post[] = [
         labelColor: "#ffffff",
         label: "Cartier",
         category: "Cartier · Ad Campaign",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.id_3,
@@ -97,7 +90,6 @@ export const BRAND_IDENTITY_POSTS: Post[] = [
         labelColor: "#fff2fa",
         label: "Khamma Ghani",
         category: "Khamma Ghani · Cultural Artwork",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.id_4,
@@ -105,7 +97,6 @@ export const BRAND_IDENTITY_POSTS: Post[] = [
         labelColor: "#ede4c8",
         label: "Morbagh Livings",
         category: "Morbagh Livings · Decor Brand",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.id_5,
@@ -113,25 +104,23 @@ export const BRAND_IDENTITY_POSTS: Post[] = [
         labelColor: "#fff6d6",
         label: "Rovena",
         category: "Rovena · Streetwear Brand",
-        devanagari: "",
     },
 ]
 export const VIDEO_POSTS: Post[] = [
-    {
-        img: IMG_PATHS.cadillac,
-        categoryColor: "#c9f3b5",
-        labelColor: "#f4ffe8",
-        label: "Cadillac Deville",
-        category: "Cadillac Deville · Commercial Design",
-        devanagari: "",
-    },
+    // {
+    //     img: IMG_PATHS.cadillac,
+    //     categoryColor: "#c9f3b5",
+    //     labelColor: "#f4ffe8",
+    //     label: "Cadillac Deville",
+    //     category: "Cadillac Deville · Commercial Design",
+    //     
+    // },
     {
         img: IMG_PATHS.cartier,
         categoryColor: "#dceeff",
         labelColor: "#ffffff",
         label: "Cartier",
         category: "Cartier · Ad Campaign",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.khamma,
@@ -139,7 +128,6 @@ export const VIDEO_POSTS: Post[] = [
         labelColor: "#fff2fa",
         label: "Khamma Ghani",
         category: "Khamma Ghani · Cultural Artwork",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.morbagh,
@@ -147,7 +135,6 @@ export const VIDEO_POSTS: Post[] = [
         labelColor: "#ede4c8",
         label: "Morbagh Livings",
         category: "Morbagh Livings · Decor Brand",
-        devanagari: "",
     },
     {
         img: IMG_PATHS.rovena,
@@ -155,7 +142,6 @@ export const VIDEO_POSTS: Post[] = [
         labelColor: "#fff6d6",
         label: "Rovena",
         category: "Rovena · Streetwear Brand",
-        devanagari: "",
     },
 ]
 
@@ -172,18 +158,8 @@ export const GALLERIES: GallerySection[] = [
         captionRight: "Graphic Designs",
     },
     {
-        id: "brand",
-        chapter: "07 · Featured Projects 2",
-        title: "Brand Identity",
-        subtitle:
-            "Feed-scroll stoppers — cultural, editorial, and performance-driven creative for brands.",
-        posts: BRAND_IDENTITY_POSTS,
-        captionLeft: "Selected Works",
-        captionRight: "Brand Identity",
-    },
-    {
         id: "video",
-        chapter: "08 · Featured Projects 3",
+        chapter: "07 · Featured Projects 2",
         title: "Video Editing / Motion Graphics",
         subtitle:
             "Cinematic edits and title-treatment reels — duotone stills stand in for the moving frame.",
@@ -191,6 +167,16 @@ export const GALLERIES: GallerySection[] = [
         showWatermark: true,
         captionLeft: "Video Editing",
         captionRight: "Motion Graphics",
+    },
+    {
+        id: "brand",
+        chapter: "08 · Featured Projects 3",
+        title: "Brand Identity",
+        subtitle:
+            "Feed-scroll stoppers — cultural, editorial, and performance-driven creative for brands.",
+        posts: BRAND_IDENTITY_POSTS,
+        captionLeft: "Selected Works",
+        captionRight: "Brand Identity",
     },
 ];
 
@@ -201,7 +187,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#f4ffe8",
 //         label: "Cadillac Deville",
 //         sub: "Cadillac Deville · Commercial Design",
-//         devanagari: "",
+//         
 //     },
 //     nike: {
 //         grad: "radial-gradient(120% 100% at 70% 30%, #3aa9ff 0%, #0e3a75 45%, #05122b 100%)",
@@ -209,7 +195,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#ffffff",
 //         label: "Cartier",
 //         sub: "Cartier · Ad Campaign",
-//         devanagari: "",
+//         
 //     },
 //     bellavita: {
 //         grad: "radial-gradient(120% 100% at 40% 40%, #d94ea6 0%, #6b1a53 45%, #24081c 100%)",
@@ -217,7 +203,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#fff2fa",
 //         label: "Khamma Ghani",
 //         sub: "Khamma Ghani · Cultural Artwork",
-//         devanagari: "",
+//         
 //     },
 //     cartier: {
 //         grad: "radial-gradient(120% 100% at 50% 60%, #262421 0%, #16130e 60%, #060402 100%)",
@@ -225,7 +211,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#ede4c8",
 //         label: "Morbagh Livings",
 //         sub: "Morbagh Livings · Decor Brand",
-//         devanagari: "",
+//         
 //     },
 //     chai: {
 //         grad: "radial-gradient(120% 100% at 30% 70%, #d2a02b 0%, #7a5410 55%, #241800 100%)",
@@ -233,7 +219,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#fff6d6",
 //         label: "Rovena",
 //         sub: "Rovena · Streetwear Brand",
-//         devanagari: "",
+//         
 //     },
 //     meme: {
 //         grad: "radial-gradient(120% 100% at 60% 30%, #ff4b4b 0%, #7a0f14 55%, #240404 100%)",
@@ -249,7 +235,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#fff",
 //         label: "Smonic",
 //         sub: "Brand · Discount Pair",
-//         devanagari: "",
+//         
 //     },
 //     kala: {
 //         grad: "radial-gradient(120% 100% at 50% 40%, #2b6bd9 0%, #10306b 55%, #050e24 100%)",
@@ -265,7 +251,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#f0fbfa",
 //         label: "Every Step Shouldn't Hurt",
 //         sub: "Memorial · Ortho Ad",
-//         devanagari: "",
+//         
 //     },
 //     madroxVid: {
 //         grad: "linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%)",
@@ -273,7 +259,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#fff",
 //         label: "MADROX",
 //         sub: "Retro · Cinematic B&W",
-//         devanagari: "",
+//         
 //     },
 //     jordan: {
 //         grad: "linear-gradient(180deg, #262626 0%, #0a0a0a 100%)",
@@ -281,7 +267,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#fff",
 //         label: "JORDAN",
 //         sub: "Sneaker · Bold Type",
-//         devanagari: "",
+//         
 //     },
 //     raj: {
 //         grad: "linear-gradient(180deg, #4a3a10 0%, #120b00 100%)",
@@ -289,7 +275,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#f6e8b0",
 //         label: "RAJASTHANI",
 //         sub: "Hawa Mahal · Duotone",
-//         devanagari: "",
+//         
 //     },
 //     ve: {
 //         grad: "linear-gradient(180deg, #1f1f1f 0%, #060606 100%)",
@@ -297,7 +283,7 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#fff",
 //         label: "VIDEO EDITOR",
 //         sub: "Portrait · Black & White",
-//         devanagari: "",
+//         
 //     },
 //     mind: {
 //         grad: "linear-gradient(180deg, #2a2a2a 0%, #0a0a0a 100%)",
@@ -305,6 +291,6 @@ export const GALLERIES: GallerySection[] = [
 //         fg: "#fff",
 //         label: "WHAT'S IN MY MIND",
 //         sub: "Brain · Concept",
-//         devanagari: "",
+//         
 //     },
 // };

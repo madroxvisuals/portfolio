@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 import { config } from "@dotenvx/dotenvx";
-import { ContactFormState } from "@/types";
+import { ContactFormState } from "@/types/app.types";
 
 config();
 

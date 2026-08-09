@@ -1,13 +1,13 @@
 import Header from "@/components/Header";
-import Marquee from "@/components/Marquee";
-import Hero from "@/app/_sections/Hero/Hero";
+import Hero from "@/app/_sections/Hero";
 import Services from "@/components/Services";
+import Marquee from "@/app/_sections/Marquee";
 import HowWeWork from "@/components/HowWeWork";
 import CtaFooter from "@/components/CtaFooter";
 import About from "@/app/_sections/About/About";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
-import BrandSnapshots from "@/components/BrandSnapshots";
+import BrandSnapshots from "@/app/_sections/BrandSnapshots/BrandSnapshots";
 import FeaturedProjects from "@/components/FeaturedProjects";
 
 export default function Home() {

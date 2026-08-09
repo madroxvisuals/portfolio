@@ -4,7 +4,13 @@ export interface Post {
     labelColor: string;
     label: string;
     category: string;
-    devanagari: string;
+    offset?: {
+        top?: string;
+        bottom?: string;
+        left?: string;
+        right?: string;
+    }
+    devanagari?: string;
 }
 
 export interface GallerySection {
