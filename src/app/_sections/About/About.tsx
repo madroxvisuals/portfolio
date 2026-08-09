@@ -94,7 +94,7 @@ export default function About() {
                                 src={RESOURCE_PATHS.profile}
                                 alt="Mohit - Founder"
                                 fill
-                                className="object-cover"
+                                className="object-cover object-[center_20%]"
                             />
                         </div>
                         <div className="flex-1 sm:flex-none">
