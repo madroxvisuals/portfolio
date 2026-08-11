@@ -1,0 +1,39 @@
+src/app/_sections/Header.tsx
+  s_aa1fdbe6e3513b::t_6ceea307382697 18-19,21-26,28-46,48-61,67,69-80,82-84,86-92,109,111-114,118-119,131-132
+  s_aa1fdbe6e3513b::t_3c537a3b88289c 93,95-103,108,129-130
+  s_aa1fdbe6e3513b::t_cd4d3034c7b12f 110,115
+  s_bcb174e6642abc::t_207a920824907e 107
+  h_1dd7bb9db9f819 5-6,64,85,106,116-117,127-128
+  h_1dd7bb9db9f819 62-63,104-105,120-126
+src/app/page.tsx
+  s_aa1fdbe6e3513b::t_ba4388e1464cc0 1,12-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "9ce9087448cfc22e3ac496f12f14f88aa3b3cc7c",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_aa1fdbe6e3513b": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "117cf8ff-0e74-4c7e-b5cf-e0212910cf63",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    },
+    "s_bcb174e6642abc": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786429182391",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
