@@ -34,7 +34,7 @@ export default function Header() {
             className="fixed top-0 left-0 right-0 z-50"
         >
             <div
-                className={`mx-auto transition-all duration-500 ${
+                className={`md:mx-auto transition-all duration-500 mx-2 ${
                     scrolled ? "mt-3 max-w-5xl" : "mt-5 max-w-6xl"
                 }`}
                 style={{
@@ -106,7 +106,7 @@ export default function Header() {
                             background: "rgba(10,10,10,0.35)",
                             backdropFilter: "blur(20px)",
                             borderRadius: "20px",
-                            margin: "5px",
+                            margin: "8px 12px",
                             WebkitBackdropFilter: "blur(20px)",
                         }}
                     >
