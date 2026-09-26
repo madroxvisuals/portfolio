@@ -167,6 +167,27 @@ body::after {
     0 0 24px rgba(232, 185, 35, 0.18);
 }
 
+.service-card:hover {
+    transform: none;
+    border-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.service-stem {
+    --service-stem-height: 76px;
+}
+
+@media (min-width: 1280px) {
+    .service-item:nth-child(odd) .service-stem {
+        --service-stem-height: 168px;
+    }
+
+    .service-item:nth-child(even) .service-stem {
+        --service-stem-height: 48px;
+    }
+}
+
 /* Thin gold hairline */
 .hairline-gold {
     background: linear-gradient(

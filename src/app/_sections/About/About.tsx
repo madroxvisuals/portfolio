@@ -35,7 +35,7 @@ export default function About() {
                     <SectionIntro
                         eyebrow="01 — About"
                         heading="About"
-                        copy="Madrox Visuals is a premium creative brand helping businesses communicate through purposeful design, visual storytelling, and high-quality creative solutions. Every project is crafted to build trust, strengthen brand identity, and leave a lasting impression."
+                        copy="Madrox Visuals is a creative brand helping businesses, brands, and creators through purposeful creative solutions. We turn ideas into clear, distinctive, and memorable visual experiences that help brands communicate better, strengthen their identity, and connect with the people they want to reach."
                         eyebrowTestId="about-eyebrow"
                         headingTestId="about-heading"
                         copyTestId="about-copy"
@@ -78,7 +78,7 @@ export default function About() {
                     <SectionIntro
                         eyebrow="02 — Founder"
                         heading="Founder"
-                        copy="Founded Madrox Visuals with a vision to help businesses build stronger brands through purposeful design, premium visuals, and creative storytelling."
+                        copy="Founded Madrox Visuals with a vision to turn creativity into purposeful communication  combining visual thinking, design, and storytelling to help businesses express their ideas clearly, build stronger identities, and create work that stays remembered."
                         eyebrowTestId="founder-eyebrow"
                         headingTestId="founder-heading"
                         copyTestId="founder-copy"

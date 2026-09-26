@@ -19,7 +19,7 @@ export const RESOURCE_PATHS = {
     profile: "/img/profile.jpeg",
 
     // Logos
-    logo_without_text: "/logo_without_text.png",
+    logo_without_text: "/logo.png",
     logo_with_text: "/logo_with_text.png",
 
     // Graphics Posts Images

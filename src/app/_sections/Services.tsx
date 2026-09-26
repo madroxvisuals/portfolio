@@ -5,10 +5,12 @@ import { motion } from "motion/react";
 import { RESOURCE_PATHS } from "@/constants/app.constants";
 
 const SERVICES = [
-    { label: "Graphic Designing", stem: 190 },
-    { label: "Video Editing", stem: 140 },
-    { label: "Motion Graphics", stem: 210 },
-    { label: "Social Media Designs", stem: 160 },
+    { label: "Creative Direction" },
+    { label: "Video Editing" },
+    { label: "Graphics Designing" },
+    { label: "Web Development" },
+    { label: "Social Branding" },
+    { label: "Videography" },
 ]as const;
 
 export default function Services() {
@@ -59,7 +61,7 @@ export default function Services() {
         </div>
 
         {/* Vertical stem items */}
-        <div className="mt-24 grid grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="mt-16 grid grid-cols-1 min-[420px]:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 sm:gap-8 xl:gap-5">
           {SERVICES.map((s, i) => (
             <motion.div
               key={s.label}
@@ -71,7 +73,7 @@ export default function Services() {
                 delay: i * 0.12,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="group relative flex flex-col items-center text-center"
+              className="service-item group relative isolate flex min-w-0 flex-col items-center text-center"
               data-testid={`service-item-${i}`}
             >
               {/* gold dot */}
@@ -85,28 +87,28 @@ export default function Services() {
               {/* vertical stem */}
               <motion.span
                 initial={{ height: 0 }}
-                whileInView={{ height: s.stem }}
+                whileInView={{ height: "var(--service-stem-height)" }}
                 viewport={{ once: true }}
                 transition={{
                   duration: 1.0,
                   delay: 0.2 + i * 0.12,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="w-px mt-3"
+                className="service-stem w-px mt-3"
                 style={{
                   background:
-                    "linear-gradient(180deg, var(--madrox-gold) 0%, rgba(255,255,255,0.15) 100%)",
+                    "linear-gradient(180deg, var(--madrox-gold) 0%, rgba(232,185,35,0.08) 100%)",
                 }}
               />
               {/* label */}
               <div
-                className="mt-6 px-6 py-4 glass rounded-2xl"
+                className="service-card relative z-0 mt-4 w-full max-w-52 px-3 py-3 sm:px-4 sm:py-3 glass rounded-2xl"
                 data-testid={`service-label-${i}`}
               >
-                <span className="font-bold-h text-white text-lg sm:text-xl block">
+                <span className="font-bold-h text-white text-sm sm:text-base lg:text-lg leading-tight block">
                   {s.label}
                 </span>
-                <span className="font-sm text-[10px] uppercase text-white/45 tracking-[0.4em] mt-2 block">
+                <span className="font-sm text-[9px] uppercase text-white/45 tracking-[0.3em] mt-2 block">
                   0{i + 1}
                 </span>
               </div>

@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { RESOURCE_PATHS } from "@/constants/app.constants";
 import React, { useEffect, useRef } from "react";
+import { RESOURCE_PATHS } from "@/constants/app.constants";
 import { motion, useScroll, useTransform } from "motion/react";
 
 export default function Hero() {
