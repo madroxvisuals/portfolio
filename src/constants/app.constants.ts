@@ -30,10 +30,10 @@ export const RESOURCE_PATHS = {
     rovena: "/img/graphics_design/rovena_streetwear_brand.jpg",
 
     // Brand Identity Posts Images
-    id_1: "/img/brand_identity/identity_1.jpg",
-    id_2: "/img/brand_identity/identity_2.jpg",
+    id_1: "/img/brand_identity/identity_1.png",
+    id_2: "/img/brand_identity/identity_2.jpeg",
     id_3: "/img/brand_identity/identity_3.jpg",
-    id_4: "/img/brand_identity/identity_4.png",
+    id_4: "/img/brand_identity/identity_4.jpeg",
     id_5: "/img/brand_identity/identity_5.png",
 
     // Video Posts
@@ -110,6 +110,9 @@ export const BRAND_IDENTITY_POSTS: Post[] = [
         labelColor: "#ffffff",
         label: "Cartier",
         category: "Cartier · Ad Campaign",
+        offset: {
+            top:"-20px"
+        }
     },
     {
         src: RESOURCE_PATHS.id_3,
@@ -117,6 +120,9 @@ export const BRAND_IDENTITY_POSTS: Post[] = [
         labelColor: "#fff2fa",
         label: "Khamma Ghani",
         category: "Khamma Ghani · Cultural Artwork",
+        offset: {
+            top:"top"
+        }
     },
     {
         src: RESOURCE_PATHS.id_4,
