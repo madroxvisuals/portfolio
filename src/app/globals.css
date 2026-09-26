@@ -308,7 +308,7 @@ html.lenis body {
 }
 
 .marquee-track {
-    animation: marquee 42s linear infinite;
+    animation: marquee 8s linear infinite;
     will-change: transform;
 }
 

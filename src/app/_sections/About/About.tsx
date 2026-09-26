@@ -103,13 +103,13 @@ export default function About() {
                                 style={GOLD_TEXT_STYLE}
                                 data-testid="founder-name"
                             >
-                                Mohit
+                                Mohit Dhanorkar
                             </div>
                             <div
                                 className="font-sm text-white/65 text-[11px] uppercase mt-2 tracking-[0.24em]"
                                 data-testid="founder-role"
                             >
-                                Graphic Designer • Video Editor • Visual Creator
+                                Founder & Visual Designer
                             </div>
                         </div>
                     </motion.div>

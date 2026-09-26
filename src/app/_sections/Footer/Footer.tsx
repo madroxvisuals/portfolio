@@ -76,11 +76,11 @@ export default function Footer() {
                     className="flex items-center justify-center gap-6 sm:gap-16 flex-wrap font-sm text-[10px] uppercase text-white/50 tracking-[0.42em]"
                     data-testid="cta-micronav"
                 >
-                    <span>Established 2024</span>
+                    <span>Redefined 2026</span>
                     <span aria-hidden className="w-1.5 h-1.5 rounded-full" style={GOLD_DOT_STYLE}/>
                     <span>Premium Creative Brand</span>
                     <span aria-hidden className="w-1.5 h-1.5 rounded-full" style={GOLD_DOT_STYLE}/>
-                    <span>Brand Profile</span>
+                    <span>Built for Clarity</span>
                 </motion.div>
 
                 {/* Italic script line */}
@@ -125,13 +125,13 @@ export default function Footer() {
                     </Magnetic>
                     <span className="text-white/25">|</span>
                     <Magnetic
-                        href="https://instagram.com/madrox_visuals"
+                        href="https://instagram.com/madrox.visuals"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm sm:text-base hover:text-(--madrox-gold)"
                         data-testid="cta-instagram"
                     >
-                        Instagram : @madrox_visuals
+                        Instagram : @madrox.visuals
                     </Magnetic>
                 </motion.div>
 
@@ -267,7 +267,7 @@ export default function Footer() {
                     <div className="h-px w-40 hairline-gold opacity-60"/>
                     <Image src={RESOURCE_PATHS.logo_without_text} alt="Madrox Logo" width={80} height={80} />
                     <div className="font-sm text-[10px] uppercase text-white/40 tracking-[0.4em]">
-                        © 2026 Designed by Vivek Dahiya
+                        © 2026 Madrox Visuals. All Rights Reserved.
                     </div>
                 </div>
             </div>
