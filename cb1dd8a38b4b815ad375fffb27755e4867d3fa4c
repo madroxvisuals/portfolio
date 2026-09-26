@@ -1,0 +1,27 @@
+src/components/CtaFooter.tsx
+  h_1dd7bb9db9f819 4,169
+package.json
+  s_b039be49211d83::t_f1431b3d001fba 34-35
+  s_b039be49211d83::t_e268c105d6b730 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "cb1dd8a38b4b815ad375fffb27755e4867d3fa4c",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_b039be49211d83": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1785576004952",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}

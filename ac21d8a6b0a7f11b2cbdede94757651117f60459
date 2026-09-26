@@ -1,0 +1,73 @@
+AGENTS.md
+  s_bcb174e6642abc::t_86e3c6d6b4d683 26
+  s_bcb174e6642abc::t_09d280110e6f9f 56
+  s_bcb174e6642abc::t_b6b86c639211e3 79
+  s_bcb174e6642abc::t_3fd48dd7592016 25
+  s_bcb174e6642abc::t_b1d6b2818e8f04 37
+  s_bcb174e6642abc::t_9df4c84ea0660d 59
+  s_bcb174e6642abc::t_a07eb51144898a 14
+  s_bcb174e6642abc::t_ff5ac93e8dcaca 76
+  s_bcb174e6642abc::t_4bf0d8f2e695a6 24
+  s_bcb174e6642abc::t_8fc057da925469 27
+  s_bcb174e6642abc::t_bf1c086b797f22 58
+  s_bcb174e6642abc::t_f3fc0ea14feb02 35
+  s_bcb174e6642abc::t_aa672bf74ded64 74
+  s_bcb174e6642abc::t_7f473b941ad900 23
+  s_bcb174e6642abc::t_7674113614f391 39,45,50-51
+  s_bcb174e6642abc::t_47e73e07072fbf 33
+  s_bcb174e6642abc::t_9d11110c626359 75
+  h_1dd7bb9db9f819 15-16
+  s_bcb174e6642abc::t_1c446b91e11ca0 46
+  s_bcb174e6642abc::t_a47933bdacca6d 21
+  s_bcb174e6642abc::t_4c76b6bea0c2cd 29
+  s_bcb174e6642abc::t_b4b8c3ce179626 52-55
+  s_bcb174e6642abc::t_e41e29cd9a158f 48
+  s_bcb174e6642abc::t_db4685cdc7ee90 18-19
+  s_bcb174e6642abc::t_11a97e7975d17f 44
+  s_bcb174e6642abc::t_e2b2e10f90b990 42
+  s_bcb174e6642abc::t_ef68088183db60 97
+  s_bcb174e6642abc::t_e95b5de9208faf 40
+  s_bcb174e6642abc::t_23608d5a3016f7 22
+  s_bcb174e6642abc::t_73daeddc297ddc 65
+  s_bcb174e6642abc::t_ca2660bbb7dca0 36
+  s_bcb174e6642abc::t_ec60f0d79830ac 60
+  s_bcb174e6642abc::t_c6d129c6e9cf26 34
+  s_bcb174e6642abc::t_0040e3a4b7696f 30
+  s_bcb174e6642abc::t_081536ae268fe4 38
+  s_bcb174e6642abc::t_57a2ed5e9d8559 77
+  s_bcb174e6642abc::t_d0f515df8bee68 11-13
+  s_bcb174e6642abc::t_a0b496b92668f5 20
+  s_bcb174e6642abc::t_3b266a7ffe1ef4 28
+  s_bcb174e6642abc::t_ef89abdb779dd5 31-32
+  s_bcb174e6642abc::t_e88a1142426148 41
+  s_bcb174e6642abc::t_1a383b0d2a888f 43
+  s_bcb174e6642abc::t_8e16f7d0e7425a 47
+  s_bcb174e6642abc::t_703204296a6bdc 49
+  s_bcb174e6642abc::t_812fa676ff2017 57
+  s_bcb174e6642abc::t_854440719f2227 61-64
+  s_bcb174e6642abc::t_4f88827ec7369e 66-68,71-73
+  s_bcb174e6642abc::t_4a4a1fbda09ad3 78
+  s_bcb174e6642abc::t_7ad4c4d3faf842 80-82,94-96
+  h_1dd7bb9db9f819 1,3-10,17,69-70,83-93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "ac21d8a6b0a7f11b2cbdede94757651117f60459",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_bcb174e6642abc": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786429182391",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}

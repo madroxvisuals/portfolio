@@ -1,0 +1,43 @@
+src/app/_sections/FeaturedProjects/FeaturedProjects.tsx
+  s_d1e4dfcdb42535::t_13d3da231be66d 55
+  s_d1e4dfcdb42535::t_0232597d181ae1 13
+  h_1dd7bb9db9f819 4-5
+  h_1dd7bb9db9f819 6
+src/app/_sections/FeaturedProjects/_components/ProjectCard.tsx
+  s_d1e4dfcdb42535::t_7277312edb77a9 14
+  s_d1e4dfcdb42535::t_101d8c42ec826c 19
+  h_1dd7bb9db9f819 2,5,13,53,61
+  s_d1e4dfcdb42535::t_3379cb1e64c668 6-12,15-18,20-52,54-60,62-79
+  s_d1e4dfcdb42535::t_a11cdd83cd7ae7 3
+  h_1dd7bb9db9f819 1,4
+src/app/_sections/FeaturedProjects/_components/CaptionRow.tsx
+  h_1dd7bb9db9f819 7,20
+  s_d1e4dfcdb42535::t_86724eb4519381 1-6,10-19
+  s_d1e4dfcdb42535::t_97e69e38f97b99 8
+  s_d1e4dfcdb42535::t_dc33b97c155235 9
+src/app/_sections/FeaturedProjects/_components/GalleryHeader.tsx
+  h_1dd7bb9db9f819 7,23
+  s_d1e4dfcdb42535::t_5acf7e4455dd73 1-6,10-22
+  s_d1e4dfcdb42535::t_f13543357431d1 8-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c535664a427acf0ef5364b81b504ae528a80a613",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_d1e4dfcdb42535": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1786281991032",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+src/app/_sections/FeaturedProjects/_components/GalleryHeader.tsx
+  h_1dd7bb9db9f819 4,8,16-17,21-27
+src/types/featuredProjects.types.ts
+  h_1dd7bb9db9f819 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "87958ff08f51e732c6567ae062b394d07f3019f0",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
