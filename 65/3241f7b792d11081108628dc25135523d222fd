@@ -1,0 +1,24 @@
+src/constants/brandSanpshots.constants.ts
+  s_667e8947b55928::t_72f6df37d58a63 12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "653241f7b792d11081108628dc25135523d222fd",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_667e8947b55928": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1790410492091",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
