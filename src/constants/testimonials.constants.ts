@@ -29,10 +29,7 @@ export const REVIEWS: Review[] = [
         rating: 4,
         quote:
             `
-            We wanted our café videos to have a cinematic yet natural feel, and that's exactly 
-            what we got. The entire process was well managed, and every revision was handled 
-            patiently. The final videos truly reflected our brand, and we've received great 
-            feedback from our customers as well.
+            We wanted our cafe videos to feel cinematic yet natural, and that's exactly what we got. Revisions were handled patiently, and the final videos truly reflected our brand — customers loved them too.
             `,
     },
     {
@@ -43,6 +40,15 @@ export const REVIEWS: Review[] = [
             `
             The motion graphics looked modern and engaging. Definitely looking forward to working 
             together again.
+            `,
+    },
+    {
+        name: "Suman Verma",
+        role: "Founder - Digital Meta monk",
+        rating: 5,
+        quote:
+            `
+            We've had a great experience working with Mohit on our video shoots and editing projects. He's professional, creative, and genuinely open to feedback and it shows in the quality of work he delivers every time. We've been really happy with the results and would gladly work with him again.
             `,
     },
 ];

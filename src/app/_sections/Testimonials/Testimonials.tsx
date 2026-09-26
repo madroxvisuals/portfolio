@@ -51,7 +51,7 @@ export default function Testimonials(){
                     </motion.p>
                 </div>
 
-                <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
                     {REVIEWS.map((r, i) => (
                         <motion.article
                             key={r.name}
