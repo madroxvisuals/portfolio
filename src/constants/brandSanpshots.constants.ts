@@ -9,7 +9,7 @@ export const NODES = [
     "Established: 2024",
     "Creative Led Approach",
     "Multi-Disciplinary Expertise",
-    "Based in Delhi NCR",
+    "Based in India, Serving Globally",
     "End-to-End Creative Solutions",
     "Flexible Workflow",
     "Premium Design Approach",
