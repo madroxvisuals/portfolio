@@ -1,0 +1,17 @@
+src/app/_sections/Testimonials/Testimonials.tsx
+  h_1dd7bb9db9f819 54
+src/constants/testimonials.constants.ts
+  h_1dd7bb9db9f819 32,46-48,50-51
+  h_1dd7bb9db9f819 45,49,52-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3e5a139faf5cd6d256a7591ec33ebd5820214d91",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
