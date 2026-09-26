@@ -1,0 +1,27 @@
+src/constants/app.constants.ts
+  h_1dd7bb9db9f819 114
+  s_667e8947b55928::t_457906fe189933 113,115,123,125
+  s_667e8947b55928::t_bc3dd18b06d04a 124
+  h_1dd7bb9db9f819 33-34,36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "ca6a62b0cfb33935d770d9bae50387b2bea17b96",
+  "prompts": {},
+  "humans": {
+    "h_1dd7bb9db9f819": {
+      "author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_667e8947b55928": {
+      "agent_id": {
+        "tool": "github-copilot-jetbrains",
+        "id": "1790410492091",
+        "model": "unknown"
+      },
+      "human_author": "Vivek Dahiya <vivekdahiya312@gmail.com>"
+    }
+  }
+}
